@@ -35,3 +35,6 @@ file in the repository under the "Roofline_Visualizer-1.1.0" directory.
 ## Contact Information ##
 
 Please contact [Charlene Yang](mailto:CJYang@lbl.gov) with any questions, problems, corrections, suggestions, etc.
+
+
+For more information related with CNN pls refer to:http://imatge-upc.github.io/telecombcn-2016-dlcv/slides/D2L1-memory.pdf
