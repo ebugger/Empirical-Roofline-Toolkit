@@ -1,0 +1,10 @@
+#!/bin/bash -l
+#SBATCH -q regular
+#SBATCH -N 1       
+#SBATCH -t 00:30:00 
+#SBATCH -C haswell
+
+cd <ERT directory>
+
+(time ./ert Config/config.cori.nersc.gov.01) >&! log.cori.nersc.gov.01
+

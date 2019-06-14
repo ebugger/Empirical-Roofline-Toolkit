@@ -1,0 +1,40 @@
+# Linux workstation, MPI and OpenMP (8-core Intel Xeon CPU E5530, 2.40 GHz)
+
+ERT_RESULTS Results.madonna.lbl.gov.01
+
+ERT_DRIVER  driver1
+ERT_KERNEL  kernel1
+
+ERT_MPI         True
+ERT_MPI_CFLAGS  -I/usr/include/mpi
+ERT_MPI_LDFLAGS -lmpi
+
+ERT_OPENMP         True
+ERT_OPENMP_CFLAGS  -openmp
+ERT_OPENMP_LDFLAGS -openmp
+
+ERT_FLOPS   1,2,4,8,16
+ERT_ALIGN   32
+
+ERT_CC      icc
+ERT_CFLAGS  -O3 -msse3 -axSSE3 -xSSE3 -fno-alias -fno-fnalias -DERT_INTEL
+
+ERT_LD      icc
+ERT_LDFLAGS 
+ERT_LDLIBS
+
+ERT_RUN     export OMP_NUM_THREADS=ERT_OPENMP_THREADS; mpirun -np ERT_MPI_PROCS ERT_CODE
+
+ERT_PROCS_THREADS  1-8
+ERT_MPI_PROCS      1,2,4,8
+ERT_OPENMP_THREADS 1,2,4,8
+
+ERT_NUM_EXPERIMENTS 3
+
+ERT_MEMORY_MAX 1073741824
+
+ERT_WORKING_SET_MIN 1
+
+ERT_TRIALS_MIN 1
+
+ERT_GNUPLOT gnuplot

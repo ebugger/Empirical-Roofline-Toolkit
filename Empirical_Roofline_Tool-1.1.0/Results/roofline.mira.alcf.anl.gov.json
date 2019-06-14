@@ -1,0 +1,192 @@
+{
+   "empirical": {
+      "gbytes": {
+         "data": [
+            [
+               "L1", 
+               232.35
+            ], 
+            [
+               "DRAM", 
+               28.25
+            ]
+         ], 
+         "metadata": {
+            "TIMESTAMP_DATA": [
+               1447104719.22, 
+               1447104771.64, 
+               1447104745.47
+            ], 
+            "OPENMP_THREADS": 32, 
+            "FLOPS": 1, 
+            "TIMESTAMP_DB": 1447108259.511473, 
+            "MPI_PROCS": 2
+         }
+      }, 
+      "gflops": {
+         "data": [
+            [
+               "GFLOPs", 
+               204.51
+            ]
+         ], 
+         "metadata": {
+            "TIMESTAMP_DATA": [
+               1447106064.22, 
+               1447106094.34, 
+               1447106033.89
+            ], 
+            "OPENMP_THREADS": 64, 
+            "FLOPS": 32, 
+            "TIMESTAMP_DB": 1447108259.510822, 
+            "MPI_PROCS": 1
+         }
+      }, 
+      "metadata": {
+         "": [
+            "BG_SMP_FAST_WAKEUP=YES", 
+            "PAMID_VERBOSE=1", 
+            "BG_COREDUMPDISABLED=1", 
+            "BG_THREADLAYOUT=1", 
+            "BG_SHAREDMEMSIZE=32MB"
+         ], 
+         "ERT_VERSION": "1.1.0", 
+         "UNAME": [
+            "Linux", 
+            "cetuslac1", 
+            "2.6.32-431.el6.ppc64", 
+            "#1 SMP Sun Nov 10 22:17:43 EST 2013", 
+            "ppc64", 
+            "ppc64"
+         ], 
+         "HOSTNAME": [
+            "cetuslac1.fst.alcf.anl.gov", 
+            [], 
+            [
+               "10.233.1.21"
+            ]
+         ], 
+         "MPIU_THREAD_GRANULARITY": ": 'per object'", 
+         "ASSERT_LEVEL": ": 2", 
+         "MPICH2_LIBDIR": ": not defined", 
+         "CONFIG": {
+            "ERT_WORKING_SET_MIN": [
+               "1"
+            ], 
+            "ERT_CFLAGS": [
+               "-O5", 
+               "-qarch=qp", 
+               "-qtune=qp", 
+               "-qsimd=auto", 
+               "-qprefetch", 
+               "-qalias=ansi:allptrs"
+            ], 
+            "ERT_CC": [
+               "mpicc"
+            ], 
+            "ERT_MPI_CFLAGS": [], 
+            "ERT_MPI_LDFLAGS": [], 
+            "ERT_MEMORY_MAX": [
+               "1073741824"
+            ], 
+            "ERT_PROCS_THREADS": [
+               "64"
+            ], 
+            "ERT_LDFLAGS": [
+               "-O5", 
+               "-qarch=qp", 
+               "-qtune=qp", 
+               "-qsimd=auto", 
+               "-qprefetch", 
+               "-qalias=ansi:allptrs"
+            ], 
+            "ERT_LDLIBS": [], 
+            "ERT_RUN": [
+               "runjob", 
+               "--np", 
+               "ERT_MPI_PROCS", 
+               "--ranks-per-node", 
+               "ERT_MPI_PROCS", 
+               "--block", 
+               "$COBALT_PARTNAME", 
+               "--envs", 
+               "COBALT_JOBID=$COBALT_JOBID", 
+               "--envs", 
+               "OMP_NUM_THREADS=ERT_OPENMP_THREADS", 
+               "--envs", 
+               "PAMID_VERBOSE=1", 
+               "--envs", 
+               "BG_SHAREDMEMSIZE=32MB", 
+               "--envs", 
+               "BG_COREDUMPDISABLED=1", 
+               "--envs", 
+               "BG_SMP_FAST_WAKEUP=YES", 
+               "--envs", 
+               "BG_THREADLAYOUT=1", 
+               "--envs", 
+               "OMP_PROC_BIND=TRUE", 
+               "--envs", 
+               "OMP_WAIT_POLICY=active", 
+               ":", 
+               "ERT_CODE"
+            ], 
+            "ERT_FLOPS": [
+               "1,2,4,8,16,32,64,128"
+            ], 
+            "ERT_OPENMP_CFLAGS": [
+               "-qsmp=omp:noauto"
+            ], 
+            "ERT_MPI": [
+               "True"
+            ], 
+            "ERT_TRIALS_MIN": [
+               "1"
+            ], 
+            "ERT_DRIVER": [
+               "driver1"
+            ], 
+            "ERT_RESULTS": [
+               "Results.mira.alcf.anl.gov.01"
+            ], 
+            "ERT_OPENMP": [
+               "True"
+            ], 
+            "ERT_MPI_PROCS": [
+               "1,2,4"
+            ], 
+            "ERT_KERNEL": [
+               "kernel1"
+            ], 
+            "ERT_GPU": [
+               false
+            ], 
+            "ERT_OPENMP_THREADS": [
+               "16,32,64"
+            ], 
+            "ERT_LD": [
+               "mpicc"
+            ], 
+            "ERT_NUM_EXPERIMENTS": [
+               "3"
+            ], 
+            "ERT_OPENMP_LDFLAGS": [
+               "-qsmp=omp:noauto"
+            ], 
+            "ERT_ALIGN": [
+               "32"
+            ], 
+            "ERT_GNUPLOT": [
+               "gnuplot"
+            ]
+         }
+      }
+   }, 
+   "spec": {
+      "gbytes": {
+         "data": []
+      }, 
+      "gflops": {
+         "data": []
+      }
+   }
+}

@@ -1,0 +1,2 @@
+This directory contains the drivers used by the ERT.  Currently one driver
+is used to obtain all the ERT results.

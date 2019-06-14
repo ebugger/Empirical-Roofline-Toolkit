@@ -1,0 +1,3 @@
+In addition to the main Python code, "../ert", this directory contains all
+the Python code used by the ERT to read a configuration file, compile/load
+the driver/kernel, run the code(s), and post-process the results.

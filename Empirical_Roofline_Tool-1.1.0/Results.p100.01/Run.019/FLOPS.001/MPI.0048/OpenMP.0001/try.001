@@ -1,0 +1,8 @@
+--------------------------------------------------------------------------
+There are not enough slots available in the system to satisfy the 48 slots
+that were requested by the application:
+  Results.p100.01/Run.019/FLOPS.001/driver1.kernel1
+
+Either request fewer slots for your application, or make more slots available
+for use.
+--------------------------------------------------------------------------

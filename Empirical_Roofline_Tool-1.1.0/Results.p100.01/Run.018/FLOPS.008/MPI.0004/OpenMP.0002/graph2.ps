@@ -1,0 +1,6359 @@
+%!PS-Adobe-2.0
+%%Title: Results.p100.01/Run.018/FLOPS.008/MPI.0004/OpenMP.0002/graph2.ps
+%%Creator: gnuplot 5.0 patchlevel 3
+%%CreationDate: Thu Jun 13 19:19:43 2019
+%%DocumentFonts: (atend)
+%%BoundingBox: 50 50 554 770
+%%Orientation: Landscape
+%%Pages: (atend)
+%%EndComments
+%%BeginProlog
+/gnudict 256 dict def
+gnudict begin
+%
+% The following true/false flags may be edited by hand if desired.
+% The unit line width and grayscale image gamma correction may also be changed.
+%
+/Color true def
+/Blacktext false def
+/Solid false def
+/Dashlength 1 def
+/Landscape true def
+/Level1 false def
+/Level3 false def
+/Rounded false def
+/ClipToBoundingBox false def
+/SuppressPDFMark false def
+/TransparentPatterns false def
+/gnulinewidth 5.000 def
+/userlinewidth gnulinewidth def
+/Gamma 1.0 def
+/BackgroundColor {-1.000 -1.000 -1.000} def
+%
+/vshift -46 def
+/dl1 {
+  10.0 Dashlength userlinewidth gnulinewidth div mul mul mul
+  Rounded { currentlinewidth 0.75 mul sub dup 0 le { pop 0.01 } if } if
+} def
+/dl2 {
+  10.0 Dashlength userlinewidth gnulinewidth div mul mul mul
+  Rounded { currentlinewidth 0.75 mul add } if
+} def
+/hpt_ 31.5 def
+/vpt_ 31.5 def
+/hpt hpt_ def
+/vpt vpt_ def
+/doclip {
+  ClipToBoundingBox {
+    newpath 50 50 moveto 554 50 lineto 554 770 lineto 50 770 lineto closepath
+    clip
+  } if
+} def
+%
+% Gnuplot Prolog Version 5.1 (Oct 2015)
+%
+%/SuppressPDFMark true def
+%
+/M {moveto} bind def
+/L {lineto} bind def
+/R {rmoveto} bind def
+/V {rlineto} bind def
+/N {newpath moveto} bind def
+/Z {closepath} bind def
+/C {setrgbcolor} bind def
+/f {rlineto fill} bind def
+/g {setgray} bind def
+/Gshow {show} def   % May be redefined later in the file to support UTF-8
+/vpt2 vpt 2 mul def
+/hpt2 hpt 2 mul def
+/Lshow {currentpoint stroke M 0 vshift R 
+	Blacktext {gsave 0 setgray textshow grestore} {textshow} ifelse} def
+/Rshow {currentpoint stroke M dup stringwidth pop neg vshift R
+	Blacktext {gsave 0 setgray textshow grestore} {textshow} ifelse} def
+/Cshow {currentpoint stroke M dup stringwidth pop -2 div vshift R 
+	Blacktext {gsave 0 setgray textshow grestore} {textshow} ifelse} def
+/UP {dup vpt_ mul /vpt exch def hpt_ mul /hpt exch def
+  /hpt2 hpt 2 mul def /vpt2 vpt 2 mul def} def
+/DL {Color {setrgbcolor Solid {pop []} if 0 setdash}
+ {pop pop pop 0 setgray Solid {pop []} if 0 setdash} ifelse} def
+/BL {stroke userlinewidth 2 mul setlinewidth
+	Rounded {1 setlinejoin 1 setlinecap} if} def
+/AL {stroke userlinewidth 2 div setlinewidth
+	Rounded {1 setlinejoin 1 setlinecap} if} def
+/UL {dup gnulinewidth mul /userlinewidth exch def
+	dup 1 lt {pop 1} if 10 mul /udl exch def} def
+/PL {stroke userlinewidth setlinewidth
+	Rounded {1 setlinejoin 1 setlinecap} if} def
+3.8 setmiterlimit
+% Classic Line colors (version 5.0)
+/LCw {1 1 1} def
+/LCb {0 0 0} def
+/LCa {0 0 0} def
+/LC0 {1 0 0} def
+/LC1 {0 1 0} def
+/LC2 {0 0 1} def
+/LC3 {1 0 1} def
+/LC4 {0 1 1} def
+/LC5 {1 1 0} def
+/LC6 {0 0 0} def
+/LC7 {1 0.3 0} def
+/LC8 {0.5 0.5 0.5} def
+% Default dash patterns (version 5.0)
+/LTB {BL [] LCb DL} def
+/LTw {PL [] 1 setgray} def
+/LTb {PL [] LCb DL} def
+/LTa {AL [1 udl mul 2 udl mul] 0 setdash LCa setrgbcolor} def
+/LT0 {PL [] LC0 DL} def
+/LT1 {PL [2 dl1 3 dl2] LC1 DL} def
+/LT2 {PL [1 dl1 1.5 dl2] LC2 DL} def
+/LT3 {PL [6 dl1 2 dl2 1 dl1 2 dl2] LC3 DL} def
+/LT4 {PL [1 dl1 2 dl2 6 dl1 2 dl2 1 dl1 2 dl2] LC4 DL} def
+/LT5 {PL [4 dl1 2 dl2] LC5 DL} def
+/LT6 {PL [1.5 dl1 1.5 dl2 1.5 dl1 1.5 dl2 1.5 dl1 6 dl2] LC6 DL} def
+/LT7 {PL [3 dl1 3 dl2 1 dl1 3 dl2] LC7 DL} def
+/LT8 {PL [2 dl1 2 dl2 2 dl1 6 dl2] LC8 DL} def
+/SL {[] 0 setdash} def
+/Pnt {stroke [] 0 setdash gsave 1 setlinecap M 0 0 V stroke grestore} def
+/Dia {stroke [] 0 setdash 2 copy vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath stroke
+  Pnt} def
+/Pls {stroke [] 0 setdash vpt sub M 0 vpt2 V
+  currentpoint stroke M
+  hpt neg vpt neg R hpt2 0 V stroke
+ } def
+/Box {stroke [] 0 setdash 2 copy exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath stroke
+  Pnt} def
+/Crs {stroke [] 0 setdash exch hpt sub exch vpt add M
+  hpt2 vpt2 neg V currentpoint stroke M
+  hpt2 neg 0 R hpt2 vpt2 V stroke} def
+/TriU {stroke [] 0 setdash 2 copy vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath stroke
+  Pnt} def
+/Star {2 copy Pls Crs} def
+/BoxF {stroke [] 0 setdash exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath fill} def
+/TriUF {stroke [] 0 setdash vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath fill} def
+/TriD {stroke [] 0 setdash 2 copy vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V closepath stroke
+  Pnt} def
+/TriDF {stroke [] 0 setdash vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V closepath fill} def
+/DiaF {stroke [] 0 setdash vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath fill} def
+/Pent {stroke [] 0 setdash 2 copy gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  closepath stroke grestore Pnt} def
+/PentF {stroke [] 0 setdash gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  closepath fill grestore} def
+/Circle {stroke [] 0 setdash 2 copy
+  hpt 0 360 arc stroke Pnt} def
+/CircleF {stroke [] 0 setdash hpt 0 360 arc fill} def
+/C0 {BL [] 0 setdash 2 copy moveto vpt 90 450 arc} bind def
+/C1 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 90 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C2 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 90 180 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C3 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 180 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C4 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 180 270 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C5 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 90 arc
+	2 copy moveto
+	2 copy vpt 180 270 arc closepath fill
+	vpt 0 360 arc} bind def
+/C6 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 90 270 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C7 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 270 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C8 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 270 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C9 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 270 450 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C10 {BL [] 0 setdash 2 copy 2 copy moveto vpt 270 360 arc closepath fill
+	2 copy moveto
+	2 copy vpt 90 180 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C11 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 180 arc closepath fill
+	2 copy moveto
+	2 copy vpt 270 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C12 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 180 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C13 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 90 arc closepath fill
+	2 copy moveto
+	2 copy vpt 180 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C14 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 90 360 arc closepath fill
+	vpt 0 360 arc} bind def
+/C15 {BL [] 0 setdash 2 copy vpt 0 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/Rec {newpath 4 2 roll moveto 1 index 0 rlineto 0 exch rlineto
+	neg 0 rlineto closepath} bind def
+/Square {dup Rec} bind def
+/Bsquare {vpt sub exch vpt sub exch vpt2 Square} bind def
+/S0 {BL [] 0 setdash 2 copy moveto 0 vpt rlineto BL Bsquare} bind def
+/S1 {BL [] 0 setdash 2 copy vpt Square fill Bsquare} bind def
+/S2 {BL [] 0 setdash 2 copy exch vpt sub exch vpt Square fill Bsquare} bind def
+/S3 {BL [] 0 setdash 2 copy exch vpt sub exch vpt2 vpt Rec fill Bsquare} bind def
+/S4 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt Square fill Bsquare} bind def
+/S5 {BL [] 0 setdash 2 copy 2 copy vpt Square fill
+	exch vpt sub exch vpt sub vpt Square fill Bsquare} bind def
+/S6 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt vpt2 Rec fill Bsquare} bind def
+/S7 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt vpt2 Rec fill
+	2 copy vpt Square fill Bsquare} bind def
+/S8 {BL [] 0 setdash 2 copy vpt sub vpt Square fill Bsquare} bind def
+/S9 {BL [] 0 setdash 2 copy vpt sub vpt vpt2 Rec fill Bsquare} bind def
+/S10 {BL [] 0 setdash 2 copy vpt sub vpt Square fill 2 copy exch vpt sub exch vpt Square fill
+	Bsquare} bind def
+/S11 {BL [] 0 setdash 2 copy vpt sub vpt Square fill 2 copy exch vpt sub exch vpt2 vpt Rec fill
+	Bsquare} bind def
+/S12 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill Bsquare} bind def
+/S13 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill
+	2 copy vpt Square fill Bsquare} bind def
+/S14 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill
+	2 copy exch vpt sub exch vpt Square fill Bsquare} bind def
+/S15 {BL [] 0 setdash 2 copy Bsquare fill Bsquare} bind def
+/D0 {gsave translate 45 rotate 0 0 S0 stroke grestore} bind def
+/D1 {gsave translate 45 rotate 0 0 S1 stroke grestore} bind def
+/D2 {gsave translate 45 rotate 0 0 S2 stroke grestore} bind def
+/D3 {gsave translate 45 rotate 0 0 S3 stroke grestore} bind def
+/D4 {gsave translate 45 rotate 0 0 S4 stroke grestore} bind def
+/D5 {gsave translate 45 rotate 0 0 S5 stroke grestore} bind def
+/D6 {gsave translate 45 rotate 0 0 S6 stroke grestore} bind def
+/D7 {gsave translate 45 rotate 0 0 S7 stroke grestore} bind def
+/D8 {gsave translate 45 rotate 0 0 S8 stroke grestore} bind def
+/D9 {gsave translate 45 rotate 0 0 S9 stroke grestore} bind def
+/D10 {gsave translate 45 rotate 0 0 S10 stroke grestore} bind def
+/D11 {gsave translate 45 rotate 0 0 S11 stroke grestore} bind def
+/D12 {gsave translate 45 rotate 0 0 S12 stroke grestore} bind def
+/D13 {gsave translate 45 rotate 0 0 S13 stroke grestore} bind def
+/D14 {gsave translate 45 rotate 0 0 S14 stroke grestore} bind def
+/D15 {gsave translate 45 rotate 0 0 S15 stroke grestore} bind def
+/DiaE {stroke [] 0 setdash vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath stroke} def
+/BoxE {stroke [] 0 setdash exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath stroke} def
+/TriUE {stroke [] 0 setdash vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath stroke} def
+/TriDE {stroke [] 0 setdash vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V closepath stroke} def
+/PentE {stroke [] 0 setdash gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  closepath stroke grestore} def
+/CircE {stroke [] 0 setdash 
+  hpt 0 360 arc stroke} def
+/Opaque {gsave closepath 1 setgray fill grestore 0 setgray closepath} def
+/DiaW {stroke [] 0 setdash vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V Opaque stroke} def
+/BoxW {stroke [] 0 setdash exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V Opaque stroke} def
+/TriUW {stroke [] 0 setdash vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V Opaque stroke} def
+/TriDW {stroke [] 0 setdash vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V Opaque stroke} def
+/PentW {stroke [] 0 setdash gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  Opaque stroke grestore} def
+/CircW {stroke [] 0 setdash 
+  hpt 0 360 arc Opaque stroke} def
+/BoxFill {gsave Rec 1 setgray fill grestore} def
+/Density {
+  /Fillden exch def
+  currentrgbcolor
+  /ColB exch def /ColG exch def /ColR exch def
+  /ColR ColR Fillden mul Fillden sub 1 add def
+  /ColG ColG Fillden mul Fillden sub 1 add def
+  /ColB ColB Fillden mul Fillden sub 1 add def
+  ColR ColG ColB setrgbcolor} def
+/BoxColFill {gsave Rec PolyFill} def
+/PolyFill {gsave Density fill grestore grestore} def
+/h {rlineto rlineto rlineto gsave closepath fill grestore} bind def
+%
+% PostScript Level 1 Pattern Fill routine for rectangles
+% Usage: x y w h s a XX PatternFill
+%	x,y = lower left corner of box to be filled
+%	w,h = width and height of box
+%	  a = angle in degrees between lines and x-axis
+%	 XX = 0/1 for no/yes cross-hatch
+%
+/PatternFill {gsave /PFa [ 9 2 roll ] def
+  PFa 0 get PFa 2 get 2 div add PFa 1 get PFa 3 get 2 div add translate
+  PFa 2 get -2 div PFa 3 get -2 div PFa 2 get PFa 3 get Rec
+  TransparentPatterns {} {gsave 1 setgray fill grestore} ifelse
+  clip
+  currentlinewidth 0.5 mul setlinewidth
+  /PFs PFa 2 get dup mul PFa 3 get dup mul add sqrt def
+  0 0 M PFa 5 get rotate PFs -2 div dup translate
+  0 1 PFs PFa 4 get div 1 add floor cvi
+	{PFa 4 get mul 0 M 0 PFs V} for
+  0 PFa 6 get ne {
+	0 1 PFs PFa 4 get div 1 add floor cvi
+	{PFa 4 get mul 0 2 1 roll M PFs 0 V} for
+ } if
+  stroke grestore} def
+%
+/languagelevel where
+ {pop languagelevel} {1} ifelse
+dup 2 lt
+	{/InterpretLevel1 true def
+	 /InterpretLevel3 false def}
+	{/InterpretLevel1 Level1 def
+	 2 gt
+	    {/InterpretLevel3 Level3 def}
+	    {/InterpretLevel3 false def}
+	 ifelse }
+ ifelse
+%
+% PostScript level 2 pattern fill definitions
+%
+/Level2PatternFill {
+/Tile8x8 {/PaintType 2 /PatternType 1 /TilingType 1 /BBox [0 0 8 8] /XStep 8 /YStep 8}
+	bind def
+/KeepColor {currentrgbcolor [/Pattern /DeviceRGB] setcolorspace} bind def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 0 M 8 8 L 0 8 M 8 0 L stroke} 
+>> matrix makepattern
+/Pat1 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 0 M 8 8 L 0 8 M 8 0 L stroke
+	0 4 M 4 8 L 8 4 L 4 0 L 0 4 L stroke}
+>> matrix makepattern
+/Pat2 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 0 M 0 8 L
+	8 8 L 8 0 L 0 0 L fill}
+>> matrix makepattern
+/Pat3 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -4 8 M 8 -4 L
+	0 12 M 12 0 L stroke}
+>> matrix makepattern
+/Pat4 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -4 0 M 8 12 L
+	0 -4 M 12 8 L stroke}
+>> matrix makepattern
+/Pat5 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -2 8 M 4 -4 L
+	0 12 M 8 -4 L 4 12 M 10 0 L stroke}
+>> matrix makepattern
+/Pat6 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -2 0 M 4 12 L
+	0 -4 M 8 12 L 4 -4 M 10 8 L stroke}
+>> matrix makepattern
+/Pat7 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 8 -2 M -4 4 L
+	12 0 M -4 8 L 12 4 M 0 10 L stroke}
+>> matrix makepattern
+/Pat8 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 -2 M 12 4 L
+	-4 0 M 12 8 L -4 4 M 8 10 L stroke}
+>> matrix makepattern
+/Pat9 exch def
+/Pattern1 {PatternBgnd KeepColor Pat1 setpattern} bind def
+/Pattern2 {PatternBgnd KeepColor Pat2 setpattern} bind def
+/Pattern3 {PatternBgnd KeepColor Pat3 setpattern} bind def
+/Pattern4 {PatternBgnd KeepColor Landscape {Pat5} {Pat4} ifelse setpattern} bind def
+/Pattern5 {PatternBgnd KeepColor Landscape {Pat4} {Pat5} ifelse setpattern} bind def
+/Pattern6 {PatternBgnd KeepColor Landscape {Pat9} {Pat6} ifelse setpattern} bind def
+/Pattern7 {PatternBgnd KeepColor Landscape {Pat8} {Pat7} ifelse setpattern} bind def
+} def
+%
+%
+%End of PostScript Level 2 code
+%
+/PatternBgnd {
+  TransparentPatterns {} {gsave 1 setgray fill grestore} ifelse
+} def
+%
+% Substitute for Level 2 pattern fill codes with
+% grayscale if Level 2 support is not selected.
+%
+/Level1PatternFill {
+/Pattern1 {0.250 Density} bind def
+/Pattern2 {0.500 Density} bind def
+/Pattern3 {0.750 Density} bind def
+/Pattern4 {0.125 Density} bind def
+/Pattern5 {0.375 Density} bind def
+/Pattern6 {0.625 Density} bind def
+/Pattern7 {0.875 Density} bind def
+} def
+%
+% Now test for support of Level 2 code
+%
+Level1 {Level1PatternFill} {Level2PatternFill} ifelse
+%
+/Symbol-Oblique /Symbol findfont [1 0 .167 1 0 0] makefont
+dup length dict begin {1 index /FID eq {pop pop} {def} ifelse} forall
+currentdict end definefont pop
+%
+/MFshow {
+   { dup 5 get 3 ge
+     { 5 get 3 eq {gsave} {grestore} ifelse }
+     {dup dup 0 get findfont exch 1 get scalefont setfont
+     [ currentpoint ] exch dup 2 get 0 exch R dup 5 get 2 ne {dup dup 6
+     get exch 4 get {textshow} {stringwidth pop 0 R} ifelse }if dup 5 get 0 eq
+     {dup 3 get {2 get neg 0 exch R pop} {pop aload pop M} ifelse} {dup 5
+     get 1 eq {dup 2 get exch dup 3 get exch 6 get stringwidth pop -2 div
+     dup 0 R} {dup 6 get stringwidth pop -2 div 0 R 6 get
+     textshow 2 index {aload pop M neg 3 -1 roll neg R pop pop} {pop pop pop
+     pop aload pop M} ifelse }ifelse }ifelse }
+     ifelse }
+   forall} def
+/Gswidth {dup type /stringtype eq {stringwidth} {pop (n) stringwidth} ifelse} def
+/MFwidth {0 exch { dup 5 get 3 ge { 5 get 3 eq { 0 } { pop } ifelse }
+ {dup 3 get{dup dup 0 get findfont exch 1 get scalefont setfont
+     6 get Gswidth pop add} {pop} ifelse} ifelse} forall} def
+/MLshow { currentpoint stroke M
+  0 exch R
+  Blacktext {gsave 0 setgray MFshow grestore} {MFshow} ifelse } bind def
+/MRshow { currentpoint stroke M
+  exch dup MFwidth neg 3 -1 roll R
+  Blacktext {gsave 0 setgray MFshow grestore} {MFshow} ifelse } bind def
+/MCshow { currentpoint stroke M
+  exch dup MFwidth -2 div 3 -1 roll R
+  Blacktext {gsave 0 setgray MFshow grestore} {MFshow} ifelse } bind def
+/XYsave    { [( ) 1 2 true false 3 ()] } bind def
+/XYrestore { [( ) 1 2 true false 4 ()] } bind def
+Level1 SuppressPDFMark or 
+{} {
+/SDict 10 dict def
+systemdict /pdfmark known not {
+  userdict /pdfmark systemdict /cleartomark get put
+} if
+SDict begin [
+  /Title (Results.p100.01/Run.018/FLOPS.008/MPI.0004/OpenMP.0002/graph2.ps)
+  /Subject (gnuplot plot)
+  /Creator (gnuplot 5.0 patchlevel 3)
+  /Author (root)
+%  /Producer (gnuplot)
+%  /Keywords ()
+  /CreationDate (Thu Jun 13 19:19:43 2019)
+  /DOCINFO pdfmark
+end
+} ifelse
+%
+% Support for boxed text - Ethan A Merritt May 2005
+%
+/InitTextBox { userdict /TBy2 3 -1 roll put userdict /TBx2 3 -1 roll put
+           userdict /TBy1 3 -1 roll put userdict /TBx1 3 -1 roll put
+	   /Boxing true def } def
+/ExtendTextBox { Boxing
+    { gsave dup false charpath pathbbox
+      dup TBy2 gt {userdict /TBy2 3 -1 roll put} {pop} ifelse
+      dup TBx2 gt {userdict /TBx2 3 -1 roll put} {pop} ifelse
+      dup TBy1 lt {userdict /TBy1 3 -1 roll put} {pop} ifelse
+      dup TBx1 lt {userdict /TBx1 3 -1 roll put} {pop} ifelse
+      grestore } if } def
+/PopTextBox { newpath TBx1 TBxmargin sub TBy1 TBymargin sub M
+               TBx1 TBxmargin sub TBy2 TBymargin add L
+	       TBx2 TBxmargin add TBy2 TBymargin add L
+	       TBx2 TBxmargin add TBy1 TBymargin sub L closepath } def
+/DrawTextBox { PopTextBox stroke /Boxing false def} def
+/FillTextBox { gsave PopTextBox 1 1 1 setrgbcolor fill grestore /Boxing false def} def
+0 0 0 0 InitTextBox
+/TBxmargin 20 def
+/TBymargin 20 def
+/Boxing false def
+/textshow { ExtendTextBox Gshow } def
+%
+% redundant definitions for compatibility with prologue.ps older than 5.0.2
+/LTB {BL [] LCb DL} def
+/LTb {PL [] LCb DL} def
+end
+%%EndProlog
+%%Page: 1 1
+gnudict begin
+gsave
+doclip
+50 50 translate
+0.100 0.100 scale
+90 rotate
+0 -5040 translate
+0 setgray
+newpath
+(Helvetica) findfont 140 scalefont setfont
+BackgroundColor 0 lt 3 1 roll 0 lt exch 0 lt or or not {gsave BackgroundColor C clippath fill grestore} if
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTa
+LCa setrgbcolor
+770 448 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 448 M
+63 0 V
+6044 0 R
+-63 0 V
+stroke
+686 448 M
+[ [(Helvetica) 140.0 0.0 true true 0 (1e-05)]
+] -46.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTa
+LCa setrgbcolor
+770 605 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 605 M
+31 0 V
+6076 0 R
+-31 0 V
+stroke
+LTa
+LCa setrgbcolor
+770 697 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 697 M
+31 0 V
+6076 0 R
+-31 0 V
+stroke
+LTa
+LCa setrgbcolor
+770 762 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 762 M
+31 0 V
+6076 0 R
+-31 0 V
+stroke
+LTa
+LCa setrgbcolor
+770 812 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 812 M
+31 0 V
+6076 0 R
+-31 0 V
+stroke
+LTa
+LCa setrgbcolor
+770 854 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 854 M
+31 0 V
+6076 0 R
+-31 0 V
+stroke
+LTa
+LCa setrgbcolor
+770 889 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 889 M
+31 0 V
+6076 0 R
+-31 0 V
+stroke
+LTa
+LCa setrgbcolor
+770 919 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 919 M
+31 0 V
+6076 0 R
+-31 0 V
+stroke
+LTa
+LCa setrgbcolor
+770 946 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 946 M
+31 0 V
+6076 0 R
+-31 0 V
+stroke
+LTa
+LCa setrgbcolor
+770 969 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 969 M
+63 0 V
+6044 0 R
+-63 0 V
+stroke
+686 969 M
+[ [(Helvetica) 140.0 0.0 true true 0 (1e-04)]
+] -46.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTa
+LCa setrgbcolor
+770 1126 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 1126 M
+31 0 V
+6076 0 R
+-31 0 V
+stroke
+LTa
+LCa setrgbcolor
+770 1218 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 1218 M
+31 0 V
+6076 0 R
+-31 0 V
+stroke
+LTa
+LCa setrgbcolor
+770 1283 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 1283 M
+31 0 V
+6076 0 R
+-31 0 V
+stroke
+LTa
+LCa setrgbcolor
+770 1334 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 1334 M
+31 0 V
+6076 0 R
+-31 0 V
+stroke
+LTa
+LCa setrgbcolor
+770 1375 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 1375 M
+31 0 V
+6076 0 R
+-31 0 V
+stroke
+LTa
+LCa setrgbcolor
+770 1410 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 1410 M
+31 0 V
+6076 0 R
+-31 0 V
+stroke
+LTa
+LCa setrgbcolor
+770 1440 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 1440 M
+31 0 V
+6076 0 R
+-31 0 V
+stroke
+LTa
+LCa setrgbcolor
+770 1467 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 1467 M
+31 0 V
+6076 0 R
+-31 0 V
+stroke
+LTa
+LCa setrgbcolor
+770 1491 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 1491 M
+63 0 V
+6044 0 R
+-63 0 V
+stroke
+686 1491 M
+[ [(Helvetica) 140.0 0.0 true true 0 (1e-03)]
+] -46.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTa
+LCa setrgbcolor
+770 1648 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 1648 M
+31 0 V
+6076 0 R
+-31 0 V
+stroke
+LTa
+LCa setrgbcolor
+770 1740 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 1740 M
+31 0 V
+6076 0 R
+-31 0 V
+stroke
+LTa
+LCa setrgbcolor
+770 1805 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 1805 M
+31 0 V
+6076 0 R
+-31 0 V
+stroke
+LTa
+LCa setrgbcolor
+770 1855 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 1855 M
+31 0 V
+6076 0 R
+-31 0 V
+stroke
+LTa
+LCa setrgbcolor
+770 1896 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 1896 M
+31 0 V
+6076 0 R
+-31 0 V
+stroke
+LTa
+LCa setrgbcolor
+770 1931 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 1931 M
+31 0 V
+6076 0 R
+-31 0 V
+stroke
+LTa
+LCa setrgbcolor
+770 1962 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 1962 M
+31 0 V
+6076 0 R
+-31 0 V
+stroke
+LTa
+LCa setrgbcolor
+770 1988 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 1988 M
+31 0 V
+6076 0 R
+-31 0 V
+stroke
+LTa
+LCa setrgbcolor
+770 2012 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 2012 M
+63 0 V
+6044 0 R
+-63 0 V
+stroke
+686 2012 M
+[ [(Helvetica) 140.0 0.0 true true 0 (1e-02)]
+] -46.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTa
+LCa setrgbcolor
+770 2169 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 2169 M
+31 0 V
+6076 0 R
+-31 0 V
+stroke
+LTa
+LCa setrgbcolor
+770 2261 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 2261 M
+31 0 V
+6076 0 R
+-31 0 V
+stroke
+LTa
+LCa setrgbcolor
+770 2326 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 2326 M
+31 0 V
+6076 0 R
+-31 0 V
+stroke
+LTa
+LCa setrgbcolor
+770 2377 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 2377 M
+31 0 V
+6076 0 R
+-31 0 V
+stroke
+LTa
+LCa setrgbcolor
+770 2418 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 2418 M
+31 0 V
+6076 0 R
+-31 0 V
+stroke
+LTa
+LCa setrgbcolor
+770 2453 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 2453 M
+31 0 V
+6076 0 R
+-31 0 V
+stroke
+LTa
+LCa setrgbcolor
+770 2483 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 2483 M
+31 0 V
+6076 0 R
+-31 0 V
+stroke
+LTa
+LCa setrgbcolor
+770 2510 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 2510 M
+31 0 V
+6076 0 R
+-31 0 V
+stroke
+LTa
+LCa setrgbcolor
+770 2534 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 2534 M
+63 0 V
+6044 0 R
+-63 0 V
+stroke
+686 2534 M
+[ [(Helvetica) 140.0 0.0 true true 0 (1e-01)]
+] -46.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTa
+LCa setrgbcolor
+770 2690 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 2690 M
+31 0 V
+6076 0 R
+-31 0 V
+stroke
+LTa
+LCa setrgbcolor
+770 2782 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 2782 M
+31 0 V
+6076 0 R
+-31 0 V
+stroke
+LTa
+LCa setrgbcolor
+770 2847 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 2847 M
+31 0 V
+6076 0 R
+-31 0 V
+stroke
+LTa
+LCa setrgbcolor
+770 2898 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 2898 M
+31 0 V
+6076 0 R
+-31 0 V
+stroke
+LTa
+LCa setrgbcolor
+770 2939 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 2939 M
+31 0 V
+6076 0 R
+-31 0 V
+stroke
+LTa
+LCa setrgbcolor
+770 2974 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 2974 M
+31 0 V
+6076 0 R
+-31 0 V
+stroke
+LTa
+LCa setrgbcolor
+770 3004 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 3004 M
+31 0 V
+6076 0 R
+-31 0 V
+stroke
+LTa
+LCa setrgbcolor
+770 3031 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 3031 M
+31 0 V
+6076 0 R
+-31 0 V
+stroke
+LTa
+LCa setrgbcolor
+770 3055 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 3055 M
+63 0 V
+6044 0 R
+-63 0 V
+stroke
+686 3055 M
+[ [(Helvetica) 140.0 0.0 true true 0 (1e+00)]
+] -46.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTa
+LCa setrgbcolor
+770 3212 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 3212 M
+31 0 V
+6076 0 R
+-31 0 V
+stroke
+LTa
+LCa setrgbcolor
+770 3304 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 3304 M
+31 0 V
+6076 0 R
+-31 0 V
+stroke
+LTa
+LCa setrgbcolor
+770 3369 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 3369 M
+31 0 V
+6076 0 R
+-31 0 V
+stroke
+LTa
+LCa setrgbcolor
+770 3419 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 3419 M
+31 0 V
+6076 0 R
+-31 0 V
+stroke
+LTa
+LCa setrgbcolor
+770 3461 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 3461 M
+31 0 V
+6076 0 R
+-31 0 V
+stroke
+LTa
+LCa setrgbcolor
+770 3495 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 3495 M
+31 0 V
+6076 0 R
+-31 0 V
+stroke
+LTa
+LCa setrgbcolor
+770 3526 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 3526 M
+31 0 V
+6076 0 R
+-31 0 V
+stroke
+LTa
+LCa setrgbcolor
+770 3552 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 3552 M
+31 0 V
+6076 0 R
+-31 0 V
+stroke
+LTa
+LCa setrgbcolor
+770 3576 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 3576 M
+63 0 V
+6044 0 R
+-63 0 V
+stroke
+686 3576 M
+[ [(Helvetica) 140.0 0.0 true true 0 (1e+01)]
+] -46.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTa
+LCa setrgbcolor
+770 3733 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 3733 M
+31 0 V
+6076 0 R
+-31 0 V
+stroke
+LTa
+LCa setrgbcolor
+770 3825 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 3825 M
+31 0 V
+6076 0 R
+-31 0 V
+stroke
+LTa
+LCa setrgbcolor
+770 3890 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 3890 M
+31 0 V
+6076 0 R
+-31 0 V
+stroke
+LTa
+LCa setrgbcolor
+770 3941 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 3941 M
+31 0 V
+6076 0 R
+-31 0 V
+stroke
+LTa
+LCa setrgbcolor
+770 3982 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 3982 M
+31 0 V
+6076 0 R
+-31 0 V
+stroke
+LTa
+LCa setrgbcolor
+770 4017 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 4017 M
+31 0 V
+6076 0 R
+-31 0 V
+stroke
+LTa
+LCa setrgbcolor
+770 4047 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 4047 M
+31 0 V
+6076 0 R
+-31 0 V
+stroke
+LTa
+LCa setrgbcolor
+770 4074 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 4074 M
+31 0 V
+6076 0 R
+-31 0 V
+stroke
+LTa
+LCa setrgbcolor
+770 4098 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 4098 M
+63 0 V
+6044 0 R
+-63 0 V
+stroke
+686 4098 M
+[ [(Helvetica) 140.0 0.0 true true 0 (1e+02)]
+] -46.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTa
+LCa setrgbcolor
+770 4255 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 4255 M
+31 0 V
+6076 0 R
+-31 0 V
+stroke
+LTa
+LCa setrgbcolor
+770 4346 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 4346 M
+31 0 V
+6076 0 R
+-31 0 V
+stroke
+LTa
+LCa setrgbcolor
+770 4412 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 4412 M
+31 0 V
+6076 0 R
+-31 0 V
+stroke
+LTa
+LCa setrgbcolor
+770 4462 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 4462 M
+31 0 V
+6076 0 R
+-31 0 V
+stroke
+LTa
+LCa setrgbcolor
+770 4503 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 4503 M
+31 0 V
+6076 0 R
+-31 0 V
+stroke
+LTa
+LCa setrgbcolor
+770 4538 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 4538 M
+31 0 V
+6076 0 R
+-31 0 V
+stroke
+LTa
+LCa setrgbcolor
+770 4568 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 4568 M
+31 0 V
+6076 0 R
+-31 0 V
+stroke
+LTa
+LCa setrgbcolor
+770 4595 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 4595 M
+31 0 V
+6076 0 R
+-31 0 V
+stroke
+LTa
+LCa setrgbcolor
+770 4619 M
+6107 0 V
+stroke
+LTb
+LCb setrgbcolor
+770 4619 M
+63 0 V
+6044 0 R
+-63 0 V
+stroke
+686 4619 M
+[ [(Helvetica) 140.0 0.0 true true 0 (1e+03)]
+] -46.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTa
+LCa setrgbcolor
+770 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+770 448 M
+0 63 V
+0 4108 R
+0 -63 V
+stroke
+770 308 M
+[ [(Helvetica) 140.0 0.0 true true 0 (1e+01)]
+] -46.7 MCshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTa
+LCa setrgbcolor
+974 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+974 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+1094 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+1094 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+1179 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+1179 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+1244 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+1244 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+1298 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+1298 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+1343 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+1343 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+1383 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+1383 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+1418 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+1418 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+1449 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+1449 448 M
+0 63 V
+0 4108 R
+0 -63 V
+stroke
+1449 308 M
+[ [(Helvetica) 140.0 0.0 true true 0 (1e+02)]
+] -46.7 MCshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTa
+LCa setrgbcolor
+1653 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+1653 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+1772 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+1772 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+1857 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+1857 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+1923 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+1923 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+1977 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+1977 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+2022 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+2022 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+2061 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+2061 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+2096 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+2096 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+2127 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+2127 448 M
+0 63 V
+0 4108 R
+0 -63 V
+stroke
+2127 308 M
+[ [(Helvetica) 140.0 0.0 true true 0 (1e+03)]
+] -46.7 MCshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTa
+LCa setrgbcolor
+2331 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+2331 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+2451 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+2451 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+2536 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+2536 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+2601 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+2601 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+2655 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+2655 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+2701 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+2701 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+2740 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+2740 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+2775 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+2775 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+2806 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+2806 448 M
+0 63 V
+0 4108 R
+0 -63 V
+stroke
+2806 308 M
+[ [(Helvetica) 140.0 0.0 true true 0 (1e+04)]
+] -46.7 MCshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTa
+LCa setrgbcolor
+3010 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+3010 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+3129 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+3129 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+3214 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+3214 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+3280 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+3280 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+3334 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+3334 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+3379 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+3379 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+3418 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+3418 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+3453 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+3453 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+3484 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+3484 448 M
+0 63 V
+0 4108 R
+0 -63 V
+stroke
+3484 308 M
+[ [(Helvetica) 140.0 0.0 true true 0 (1e+05)]
+] -46.7 MCshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTa
+LCa setrgbcolor
+3688 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+3688 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+3808 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+3808 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+3893 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+3893 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+3959 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+3959 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+4012 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+4012 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+4058 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+4058 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+4097 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+4097 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+4132 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+4132 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+4163 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+4163 448 M
+0 63 V
+0 4108 R
+0 -63 V
+stroke
+4163 308 M
+[ [(Helvetica) 140.0 0.0 true true 0 (1e+06)]
+] -46.7 MCshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTa
+LCa setrgbcolor
+4367 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+4367 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+4487 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+4487 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+4571 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+4571 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+4637 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+4637 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+4691 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+4691 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+4736 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+4736 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+4776 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+4776 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+4810 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+4810 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+4841 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+4841 448 M
+0 63 V
+0 4108 R
+0 -63 V
+stroke
+4841 308 M
+[ [(Helvetica) 140.0 0.0 true true 0 (1e+07)]
+] -46.7 MCshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTa
+LCa setrgbcolor
+5046 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+5046 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+5165 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+5165 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+5250 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+5250 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+5316 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+5316 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+5369 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+5369 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+5415 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+5415 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+5454 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+5454 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+5489 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+5489 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+5520 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+5520 448 M
+0 63 V
+0 4108 R
+0 -63 V
+stroke
+5520 308 M
+[ [(Helvetica) 140.0 0.0 true true 0 (1e+08)]
+] -46.7 MCshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTa
+LCa setrgbcolor
+5724 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+5724 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+5844 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+5844 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+5928 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+5928 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+5994 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+5994 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+6048 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+6048 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+6093 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+6093 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+6133 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+6133 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+6167 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+6167 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+6198 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+6198 448 M
+0 63 V
+0 4108 R
+0 -63 V
+stroke
+6198 308 M
+[ [(Helvetica) 140.0 0.0 true true 0 (1e+09)]
+] -46.7 MCshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTa
+LCa setrgbcolor
+6403 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+6403 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+6522 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+6522 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+6607 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+6607 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+6673 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+6673 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+6726 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+6726 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+6772 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+6772 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+6811 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+6811 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+6846 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+6846 448 M
+0 31 V
+0 4140 R
+0 -31 V
+stroke
+LTa
+LCa setrgbcolor
+6877 448 M
+0 4171 V
+stroke
+LTb
+LCb setrgbcolor
+6877 448 M
+0 63 V
+0 4108 R
+0 -63 V
+stroke
+6877 308 M
+[ [(Helvetica) 140.0 0.0 true true 0 (1e+10)]
+] -46.7 MCshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTw
+[] 0 setdash
+LCw setrgbcolor
+770 3051 M
+6107 0 V
+stroke
+LTB
+LCb setrgbcolor
+770 4619 N
+770 448 L
+6107 0 V
+0 4171 V
+-6107 0 V
+Z stroke
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+LCb setrgbcolor
+112 2533 M
+currentpoint gsave translate -270 rotate 0 0 moveto
+[ [(Helvetica) 140.0 0.0 true true 0 (Total Bandwidth \(GB/s\))]
+] -46.7 MCshow
+grestore
+LTb
+LCb setrgbcolor
+LTb
+LCb setrgbcolor
+3823 98 M
+[ [(Helvetica) 140.0 0.0 true true 0 (Working Set Size \(bytes\))]
+] -46.7 MCshow
+LTb
+LCb setrgbcolor
+3823 4829 M
+[ [(Helvetica) 140.0 0.0 true true 0 (Graph 2 \(Results.p100.01/Run.018/FLOPS.008/MPI.0004/OpenMP.0002\))]
+] -46.7 MCshow
+LCb setrgbcolor
+LTb
+LCb setrgbcolor
+% Begin plot #1
+0.400 UP
+1.000 UL
+LTb
+0.58 0.00 0.83 C /Helvetica findfont 140 scalefont setfont
+/vshift -46 def
+1317 701 M
+0 742 V
+0 1337 V
+0 164 V
+0 140 V
+0 134 V
+0 140 V
+0 -137 V
+0 302 V
+0 78 V
+0 33 V
+0 21 V
+0 -77 V
+0 57 V
+0 42 V
+0 -24 V
+0 -7 V
+0 18 V
+0 24 V
+0 -7 V
+0 7 V
+0 3 V
+0 2 V
+0 1 V
+1521 2637 M
+0 143 V
+0 39 V
+0 -79 V
+0 495 V
+0 143 V
+0 27 V
+0 212 V
+0 85 V
+0 52 V
+0 35 V
+0 22 V
+0 12 V
+0 7 V
+0 4 V
+0 -1 V
+0 1 V
+0 -2 V
+0 5 V
+0 -2 V
+0 1 V
+0 5 V
+0 -5 V
+1641 2714 M
+0 185 V
+0 150 V
+0 -221 V
+0 477 V
+0 163 V
+0 128 V
+0 96 V
+0 98 V
+0 56 V
+0 40 V
+0 18 V
+0 12 V
+0 6 V
+0 1 V
+0 4 V
+0 1 V
+0 -3 V
+0 -8 V
+0 11 V
+0 1 V
+0 -1 V
+85 -1141 R
+0 159 V
+0 146 V
+0 139 V
+0 125 V
+0 165 V
+0 156 V
+0 88 V
+0 89 V
+0 57 V
+0 38 V
+0 22 V
+0 10 V
+0 6 V
+0 4 V
+0 1 V
+0 1 V
+0 -2 V
+0 4 V
+0 -1 V
+0 7 V
+0 -2 V
+65 -1193 R
+0 154 V
+0 149 V
+0 145 V
+0 179 V
+0 143 V
+0 149 V
+0 78 V
+0 77 V
+0 56 V
+0 40 V
+0 22 V
+0 6 V
+0 7 V
+stroke 1791 4011 M
+0 3 V
+0 2 V
+0 26 V
+0 2 V
+0 -2 V
+54 -1184 R
+0 187 V
+0 126 V
+0 -246 V
+0 578 V
+0 150 V
+0 93 V
+0 105 V
+0 102 V
+0 48 V
+0 28 V
+0 25 V
+0 16 V
+0 -8 V
+0 14 V
+0 2 V
+0 -16 V
+0 17 V
+45 -1171 R
+0 175 V
+0 130 V
+0 -190 V
+0 474 V
+0 142 V
+0 140 V
+0 109 V
+0 92 V
+0 49 V
+0 41 V
+0 17 V
+0 11 V
+0 6 V
+0 4 V
+0 1 V
+0 1 V
+0 1 V
+0 -1 V
+0 -1 V
+40 -1182 R
+0 161 V
+0 145 V
+0 -233 V
+0 564 V
+0 112 V
+0 125 V
+0 110 V
+0 85 V
+0 55 V
+0 29 V
+0 25 V
+0 10 V
+0 6 V
+0 3 V
+0 1 V
+0 1 V
+35 -1197 R
+0 203 V
+0 125 V
+0 44 V
+0 258 V
+0 141 V
+0 136 V
+0 104 V
+0 75 V
+0 46 V
+0 37 V
+0 16 V
+0 9 V
+0 6 V
+0 3 V
+0 -2 V
+0 4 V
+0 -4 V
+0 4 V
+31 -1151 R
+0 162 V
+0 145 V
+0 -189 V
+0 485 V
+0 166 V
+0 95 V
+0 94 V
+0 81 V
+0 52 V
+0 27 V
+0 17 V
+0 9 V
+0 5 V
+0 1 V
+0 2 V
+0 -1 V
+0 1 V
+0 1 V
+0 -1 V
+28 -1169 R
+0 206 V
+0 127 V
+0 -137 V
+0 458 V
+stroke 2024 3620 M
+0 -9 V
+0 258 V
+0 89 V
+0 76 V
+0 16 V
+0 34 V
+0 14 V
+0 8 V
+0 4 V
+0 2 V
+0 29 V
+0 1 V
+0 -1 V
+0 1 V
+25 -1145 R
+0 178 V
+0 135 V
+0 -168 V
+0 453 V
+0 170 V
+0 113 V
+0 106 V
+0 62 V
+0 40 V
+0 27 V
+0 11 V
+0 8 V
+0 5 V
+0 1 V
+0 1 V
+0 1 V
+24 -1105 R
+0 157 V
+0 156 V
+0 -176 V
+0 488 V
+0 123 V
+0 104 V
+0 108 V
+0 52 V
+0 44 V
+0 22 V
+0 17 V
+0 7 V
+0 4 V
+0 2 V
+0 1 V
+0 1 V
+0 -1 V
+0 1 V
+0 -33 V
+22 -1045 R
+0 156 V
+0 152 V
+0 -137 V
+0 411 V
+0 161 V
+0 116 V
+0 95 V
+0 76 V
+0 52 V
+0 25 V
+0 14 V
+0 8 V
+0 4 V
+0 2 V
+0 1 V
+0 -3 V
+0 2 V
+0 2 V
+20 -1116 R
+0 159 V
+0 140 V
+0 149 V
+0 104 V
+0 182 V
+0 108 V
+0 99 V
+0 57 V
+0 39 V
+0 22 V
+0 8 V
+0 9 V
+0 3 V
+0 2 V
+0 1 V
+0 1 V
+0 -1 V
+0 -9 V
+0 10 V
+19 -1065 R
+0 152 V
+0 162 V
+0 -286 V
+0 531 V
+0 171 V
+0 118 V
+0 84 V
+0 57 V
+0 29 V
+0 19 V
+0 15 V
+0 3 V
+0 3 V
+stroke 2134 4164 M
+0 8 V
+0 1 V
+0 1 V
+0 2 V
+18 -1056 R
+0 157 V
+0 148 V
+0 -283 V
+0 580 V
+0 121 V
+0 115 V
+0 72 V
+0 56 V
+0 34 V
+0 22 V
+0 11 V
+0 5 V
+0 -2 V
+0 -2 V
+0 -10 V
+0 14 V
+0 6 V
+17 -1026 R
+0 162 V
+0 148 V
+0 113 V
+0 152 V
+0 140 V
+0 112 V
+0 75 V
+0 54 V
+0 30 V
+0 17 V
+0 11 V
+0 4 V
+0 3 V
+0 1 V
+0 1 V
+0 -4 V
+0 13 V
+0 4 V
+16 -1030 R
+0 166 V
+0 162 V
+0 134 V
+0 135 V
+0 122 V
+0 99 V
+0 73 V
+0 46 V
+0 28 V
+0 15 V
+0 8 V
+0 5 V
+0 2 V
+0 1 V
+0 -19 V
+0 19 V
+0 4 V
+0 -1 V
+0 13 V
+15 -994 R
+0 149 V
+0 170 V
+0 128 V
+0 120 V
+0 144 V
+0 86 V
+0 83 V
+0 46 V
+0 26 V
+0 14 V
+0 7 V
+0 5 V
+0 3 V
+0 1 V
+0 -13 V
+0 14 V
+0 3 V
+0 -2 V
+28 -969 R
+0 151 V
+0 161 V
+0 107 V
+0 158 V
+0 162 V
+0 111 V
+0 82 V
+0 60 V
+0 41 V
+0 23 V
+0 11 V
+0 6 V
+0 4 V
+0 2 V
+0 1 V
+0 1 V
+26 -1164 R
+0 264 V
+0 152 V
+0 128 V
+0 142 V
+0 147 V
+0 100 V
+stroke 2254 4027 M
+0 82 V
+0 62 V
+0 29 V
+0 21 V
+0 10 V
+0 6 V
+0 3 V
+0 1 V
+0 1 V
+0 10 V
+23 -1046 R
+0 162 V
+0 162 V
+0 140 V
+0 110 V
+0 156 V
+0 97 V
+0 72 V
+0 38 V
+0 32 V
+0 19 V
+0 8 V
+0 5 V
+0 3 V
+0 1 V
+0 3 V
+0 -2 V
+0 12 V
+0 3 V
+22 -994 R
+0 174 V
+0 126 V
+0 138 V
+0 134 V
+0 138 V
+0 92 V
+0 71 V
+0 42 V
+0 22 V
+0 17 V
+0 4 V
+0 9 V
+0 -2 V
+0 5 V
+0 1 V
+0 5 V
+0 -4 V
+0 6 V
+0 -1 V
+20 -946 R
+0 151 V
+0 130 V
+0 167 V
+0 127 V
+0 136 V
+0 118 V
+0 83 V
+0 55 V
+0 40 V
+0 22 V
+0 6 V
+0 11 V
+0 2 V
+0 2 V
+0 1 V
+0 12 V
+0 -5 V
+0 6 V
+28 -1069 R
+0 162 V
+0 171 V
+0 125 V
+0 109 V
+0 159 V
+0 102 V
+0 70 V
+0 40 V
+0 34 V
+0 18 V
+0 7 V
+0 6 V
+0 2 V
+0 1 V
+0 1 V
+0 -3 V
+0 16 V
+0 -2 V
+26 -969 R
+0 127 V
+0 174 V
+0 132 V
+0 137 V
+0 107 V
+0 89 V
+0 81 V
+0 38 V
+0 28 V
+0 14 V
+0 7 V
+0 4 V
+0 -2 V
+0 5 V
+0 3 V
+0 2 V
+stroke 2373 4254 M
+0 3 V
+24 -932 R
+0 153 V
+0 153 V
+0 121 V
+0 155 V
+0 126 V
+0 101 V
+0 83 V
+0 44 V
+0 35 V
+0 20 V
+0 10 V
+0 -5 V
+0 13 V
+0 1 V
+0 1 V
+0 3 V
+0 10 V
+22 -1043 R
+0 171 V
+0 155 V
+0 122 V
+0 160 V
+0 119 V
+0 86 V
+0 78 V
+0 43 V
+0 26 V
+0 13 V
+0 8 V
+0 5 V
+0 -1 V
+0 4 V
+0 1 V
+0 1 V
+0 10 V
+26 -966 R
+0 142 V
+0 175 V
+0 150 V
+0 113 V
+0 150 V
+0 107 V
+0 71 V
+0 51 V
+0 33 V
+0 19 V
+0 9 V
+0 4 V
+0 2 V
+0 1 V
+0 5 V
+0 -4 V
+0 14 V
+25 -1003 R
+0 152 V
+0 152 V
+0 116 V
+0 143 V
+0 108 V
+0 99 V
+0 77 V
+0 43 V
+0 26 V
+0 13 V
+0 7 V
+0 4 V
+0 -1 V
+0 4 V
+0 -3 V
+0 3 V
+0 11 V
+0 2 V
+28 -945 R
+0 150 V
+0 126 V
+0 162 V
+0 130 V
+0 142 V
+0 97 V
+0 72 V
+0 47 V
+0 22 V
+0 19 V
+0 5 V
+0 7 V
+0 1 V
+0 1 V
+0 1 V
+0 1 V
+0 10 V
+0 2 V
+26 -979 R
+0 151 V
+0 146 V
+0 149 V
+0 131 V
+0 97 V
+0 95 V
+0 64 V
+0 37 V
+0 21 V
+0 11 V
+stroke 2524 4309 M
+0 7 V
+0 3 V
+0 1 V
+0 1 V
+0 -3 V
+0 3 V
+0 9 V
+0 6 V
+28 -889 R
+0 147 V
+0 152 V
+0 123 V
+0 137 V
+0 98 V
+0 107 V
+0 61 V
+0 35 V
+0 24 V
+0 12 V
+0 6 V
+0 4 V
+0 -2 V
+0 4 V
+0 9 V
+0 -3 V
+25 -916 R
+0 166 V
+0 150 V
+0 115 V
+0 146 V
+0 124 V
+0 77 V
+0 65 V
+0 44 V
+0 22 V
+0 13 V
+0 6 V
+0 3 V
+0 1 V
+0 1 V
+0 1 V
+0 6 V
+0 1 V
+28 -941 R
+0 142 V
+0 159 V
+0 125 V
+0 170 V
+0 126 V
+0 72 V
+0 72 V
+0 36 V
+0 28 V
+0 14 V
+0 6 V
+0 5 V
+0 1 V
+0 1 V
+0 -2 V
+0 4 V
+0 7 V
+25 -943 R
+0 172 V
+0 151 V
+0 134 V
+0 147 V
+0 104 V
+0 90 V
+0 67 V
+0 39 V
+0 22 V
+0 14 V
+0 4 V
+0 5 V
+0 -24 V
+0 1 V
+0 22 V
+0 4 V
+26 -934 R
+0 193 V
+0 114 V
+0 -275 V
+0 419 V
+0 137 V
+0 114 V
+0 80 V
+0 37 V
+0 24 V
+0 10 V
+0 5 V
+0 2 V
+0 2 V
+0 3 V
+0 -6 V
+0 15 V
+0 25 V
+27 -941 R
+0 142 V
+0 141 V
+0 161 V
+0 126 V
+0 133 V
+0 70 V
+0 57 V
+stroke 2683 4274 M
+0 36 V
+0 20 V
+0 10 V
+0 5 V
+0 4 V
+0 1 V
+0 1 V
+0 4 V
+0 7 V
+0 24 V
+27 -888 R
+0 166 V
+0 -354 V
+0 600 V
+0 108 V
+0 112 V
+0 86 V
+0 53 V
+0 25 V
+0 23 V
+0 10 V
+0 5 V
+0 1 V
+0 -2 V
+0 2 V
+0 23 V
+0 -4 V
+0 11 V
+28 -855 R
+0 139 V
+0 -95 V
+0 248 V
+0 -66 V
+0 403 V
+0 85 V
+0 35 V
+0 33 V
+0 12 V
+0 11 V
+0 -4 V
+0 9 V
+0 1 V
+0 -1 V
+0 3 V
+0 -8 V
+0 3 V
+27 -786 R
+0 150 V
+0 -205 V
+0 133 V
+0 418 V
+0 145 V
+0 58 V
+0 55 V
+0 38 V
+0 15 V
+0 9 V
+0 4 V
+0 1 V
+0 1 V
+0 -22 V
+0 26 V
+0 -9 V
+27 -807 R
+0 161 V
+0 121 V
+0 104 V
+0 145 V
+0 97 V
+0 56 V
+0 48 V
+0 30 V
+0 14 V
+0 7 V
+0 2 V
+0 2 V
+0 1 V
+0 -24 V
+0 21 V
+0 -2 V
+26 -752 R
+0 140 V
+0 -318 V
+0 590 V
+0 117 V
+0 81 V
+0 78 V
+0 40 V
+0 25 V
+0 -13 V
+0 7 V
+0 4 V
+0 1 V
+0 3 V
+0 1 V
+0 13 V
+0 1 V
+28 -744 R
+0 174 V
+0 -360 V
+0 571 V
+0 140 V
+0 3 V
+0 131 V
+stroke 2846 4256 M
+0 51 V
+0 18 V
+0 15 V
+0 8 V
+0 3 V
+0 1 V
+0 1 V
+0 -12 V
+0 7 V
+26 -721 R
+0 160 V
+0 65 V
+0 142 V
+0 90 V
+0 91 V
+0 104 V
+0 27 V
+0 29 V
+0 12 V
+0 5 V
+0 4 V
+0 -24 V
+0 14 V
+0 14 V
+0 -6 V
+0 6 V
+28 -750 R
+0 148 V
+0 165 V
+0 110 V
+0 127 V
+0 88 V
+0 47 V
+0 51 V
+0 22 V
+0 12 V
+0 6 V
+0 3 V
+0 2 V
+0 -10 V
+0 12 V
+27 -797 R
+0 196 V
+0 -180 V
+0 439 V
+0 90 V
+0 67 V
+0 81 V
+0 40 V
+0 19 V
+0 8 V
+0 7 V
+0 2 V
+0 2 V
+0 1 V
+0 -6 V
+0 -2 V
+0 8 V
+28 -757 R
+0 190 V
+0 -209 V
+0 177 V
+0 166 V
+0 94 V
+0 277 V
+0 35 V
+0 19 V
+0 10 V
+0 5 V
+0 3 V
+0 2 V
+0 1 V
+0 -24 V
+0 24 V
+27 -724 R
+0 159 V
+0 29 V
+0 215 V
+0 124 V
+0 1 V
+0 131 V
+0 32 V
+0 14 V
+0 10 V
+0 5 V
+0 2 V
+0 2 V
+0 -1 V
+0 -104 V
+0 104 V
+27 -692 R
+0 158 V
+0 92 V
+0 131 V
+0 117 V
+0 97 V
+0 27 V
+0 54 V
+0 19 V
+0 10 V
+0 5 V
+0 1 V
+0 2 V
+0 -2 V
+stroke 3009 4399 M
+0 4 V
+28 -694 R
+0 153 V
+0 -128 V
+0 394 V
+0 -169 V
+0 321 V
+0 68 V
+0 29 V
+0 14 V
+0 10 V
+0 5 V
+0 2 V
+0 2 V
+0 -4 V
+0 -3 V
+28 -670 R
+0 145 V
+0 -174 V
+0 401 V
+0 109 V
+0 77 V
+0 60 V
+0 22 V
+0 17 V
+0 9 V
+0 4 V
+0 1 V
+0 2 V
+0 -1 V
+0 1 V
+0 1 V
+28 -655 R
+0 173 V
+0 -244 V
+0 476 V
+0 88 V
+0 62 V
+0 59 V
+0 21 V
+0 16 V
+0 8 V
+0 2 V
+0 4 V
+0 1 V
+0 -16 V
+0 7 V
+28 -650 R
+0 194 V
+0 28 V
+0 169 V
+0 88 V
+0 68 V
+0 62 V
+0 24 V
+0 12 V
+0 8 V
+0 3 V
+0 2 V
+0 -2 V
+0 -1 V
+0 3 V
+0 2 V
+27 -634 R
+0 166 V
+0 125 V
+0 81 V
+0 101 V
+0 65 V
+0 36 V
+0 24 V
+0 11 V
+0 6 V
+0 2 V
+0 -15 V
+0 -8 V
+0 19 V
+0 7 V
+29 -855 R
+0 382 V
+0 -158 V
+0 138 V
+0 262 V
+0 168 V
+0 40 V
+0 18 V
+0 13 V
+0 6 V
+0 2 V
+0 2 V
+28 -568 R
+0 107 V
+0 123 V
+0 128 V
+0 65 V
+0 61 V
+0 35 V
+0 15 V
+0 10 V
+0 6 V
+0 2 V
+0 2 V
+0 1 V
+27 -550 R
+0 147 V
+stroke 3232 4007 M
+0 60 V
+0 159 V
+0 78 V
+0 50 V
+0 31 V
+0 17 V
+0 9 V
+0 6 V
+0 -2 V
+0 -1 V
+0 7 V
+0 -8 V
+0 8 V
+28 -530 R
+0 138 V
+0 -225 V
+0 434 V
+0 78 V
+0 45 V
+0 27 V
+0 12 V
+0 10 V
+0 5 V
+0 2 V
+0 1 V
+0 1 V
+0 -8 V
+28 -524 R
+0 133 V
+0 123 V
+0 102 V
+0 65 V
+0 46 V
+0 33 V
+0 14 V
+0 9 V
+0 3 V
+0 3 V
+0 1 V
+28 -489 R
+0 99 V
+0 -81 V
+0 279 V
+0 13 V
+0 121 V
+0 31 V
+0 14 V
+0 8 V
+0 3 V
+0 -1 V
+0 5 V
+28 -490 R
+0 148 V
+0 104 V
+0 93 V
+0 55 V
+0 42 V
+0 25 V
+0 11 V
+0 7 V
+0 3 V
+0 2 V
+0 1 V
+0 -4 V
+0 4 V
+28 -590 R
+0 261 V
+0 91 V
+0 98 V
+0 61 V
+0 37 V
+0 18 V
+0 12 V
+0 7 V
+0 3 V
+0 -1 V
+0 4 V
+0 -1 V
+0 -5 V
+28 -444 R
+0 127 V
+0 106 V
+0 90 V
+0 59 V
+0 35 V
+0 19 V
+0 12 V
+0 6 V
+0 3 V
+0 2 V
+0 1 V
+0 -1 V
+28 -434 R
+0 123 V
+0 81 V
+0 104 V
+0 48 V
+0 33 V
+0 19 V
+0 10 V
+0 6 V
+0 3 V
+0 1 V
+0 1 V
+stroke 3428 4427 M
+28 -414 R
+0 129 V
+0 -151 V
+0 322 V
+0 49 V
+0 32 V
+0 15 V
+0 9 V
+0 6 V
+0 2 V
+0 1 V
+0 1 V
+0 -1 V
+0 1 V
+28 -495 R
+0 208 V
+0 102 V
+0 88 V
+0 33 V
+0 30 V
+0 19 V
+0 8 V
+0 6 V
+0 2 V
+0 -21 V
+0 5 V
+0 17 V
+0 -5 V
+28 -378 R
+0 121 V
+0 95 V
+0 72 V
+0 35 V
+0 22 V
+0 7 V
+0 4 V
+0 4 V
+0 1 V
+0 14 V
+0 14 V
+0 -5 V
+0 1 V
+28 -380 R
+0 75 V
+0 -56 V
+0 191 V
+0 74 V
+0 69 V
+0 14 V
+0 7 V
+0 4 V
+0 3 V
+0 1 V
+0 -6 V
+0 6 V
+28 -461 R
+0 -116 V
+0 421 V
+0 -134 V
+0 209 V
+0 56 V
+0 14 V
+0 7 V
+0 4 V
+0 2 V
+0 -6 V
+28 -324 R
+0 118 V
+0 -203 V
+0 333 V
+0 38 V
+0 21 V
+0 13 V
+0 7 V
+0 2 V
+0 2 V
+0 1 V
+28 -335 R
+0 115 V
+0 84 V
+0 57 V
+0 37 V
+0 18 V
+0 10 V
+0 4 V
+0 6 V
+0 -26 V
+0 17 V
+0 11 V
+28 -421 R
+0 197 V
+0 97 V
+0 51 V
+0 38 V
+0 16 V
+0 10 V
+0 6 V
+0 3 V
+0 1 V
+0 1 V
+0 -10 V
+0 10 V
+28 -351 R
+0 55 V
+stroke 3680 4139 M
+0 49 V
+0 122 V
+0 90 V
+0 17 V
+0 11 V
+0 5 V
+0 2 V
+0 2 V
+29 -395 R
+0 190 V
+0 68 V
+0 57 V
+0 25 V
+0 13 V
+0 8 V
+0 5 V
+0 2 V
+0 17 V
+0 11 V
+28 -364 R
+0 189 V
+0 69 V
+0 50 V
+0 26 V
+0 -10 V
+0 7 V
+0 4 V
+0 2 V
+0 28 V
+28 -321 R
+0 -137 V
+0 108 V
+0 291 V
+0 31 V
+0 13 V
+0 9 V
+0 4 V
+0 1 V
+0 1 V
+0 -11 V
+0 12 V
+28 -320 R
+0 -121 V
+0 348 V
+0 42 V
+0 22 V
+0 15 V
+0 6 V
+0 4 V
+0 -2 V
+0 4 V
+28 -326 R
+0 -108 V
+0 328 V
+0 56 V
+0 27 V
+0 12 V
+0 7 V
+0 3 V
+0 -1 V
+0 4 V
+28 -303 R
+0 173 V
+0 49 V
+0 38 V
+0 19 V
+0 13 V
+0 5 V
+0 4 V
+0 1 V
+0 -5 V
+0 6 V
+28 -328 R
+0 -58 V
+0 316 V
+0 21 V
+0 27 V
+0 11 V
+0 5 V
+0 3 V
+0 1 V
+0 1 V
+0 1 V
+28 -261 R
+0 -96 V
+0 295 V
+0 28 V
+0 16 V
+0 9 V
+0 4 V
+0 3 V
+0 1 V
+0 1 V
+0 22 V
+28 -264 R
+0 136 V
+0 49 V
+0 25 V
+0 15 V
+0 8 V
+0 4 V
+0 2 V
+0 2 V
+0 4 V
+stroke 3933 4443 M
+0 24 V
+28 -305 R
+0 182 V
+0 30 V
+0 33 V
+0 18 V
+0 8 V
+0 3 V
+0 3 V
+0 1 V
+0 1 V
+0 9 V
+0 -7 V
+28 -330 R
+0 64 V
+0 84 V
+0 147 V
+0 18 V
+0 7 V
+0 3 V
+0 2 V
+0 1 V
+0 21 V
+28 -278 R
+0 175 V
+0 35 V
+0 24 V
+0 12 V
+0 7 V
+0 3 V
+0 2 V
+0 -1 V
+0 9 V
+0 7 V
+28 -268 R
+0 171 V
+0 40 V
+0 21 V
+0 11 V
+0 6 V
+0 3 V
+0 1 V
+0 1 V
+0 19 V
+28 -212 R
+0 -112 V
+0 263 V
+0 22 V
+0 10 V
+0 5 V
+0 3 V
+0 -1 V
+0 3 V
+0 6 V
+0 9 V
+28 -235 R
+0 152 V
+0 31 V
+0 19 V
+0 9 V
+0 5 V
+0 2 V
+0 1 V
+0 1 V
+0 16 V
+0 10 V
+29 -270 R
+0 181 V
+0 29 V
+0 17 V
+0 8 V
+0 5 V
+0 2 V
+0 1 V
+0 1 V
+0 -2 V
+0 28 V
+28 -227 R
+0 119 V
+0 53 V
+0 13 V
+0 9 V
+0 4 V
+0 2 V
+0 1 V
+0 5 V
+0 24 V
+28 -258 R
+0 175 V
+0 28 V
+0 13 V
+0 6 V
+0 4 V
+0 2 V
+0 -1 V
+0 -5 V
+0 15 V
+28 -245 R
+0 189 V
+0 25 V
+0 11 V
+0 6 V
+0 4 V
+0 1 V
+stroke 4214 4440 M
+0 1 V
+0 1 V
+0 18 V
+28 -202 R
+0 139 V
+0 21 V
+0 12 V
+0 6 V
+0 3 V
+0 1 V
+0 1 V
+0 13 V
+0 11 V
+28 -374 R
+0 309 V
+0 15 V
+0 14 V
+0 7 V
+0 3 V
+0 1 V
+0 1 V
+0 -1 V
+0 4 V
+28 -341 R
+0 300 V
+0 18 V
+0 10 V
+0 5 V
+0 3 V
+0 1 V
+0 1 V
+0 5 V
+0 18 V
+28 -228 R
+0 165 V
+0 22 V
+0 10 V
+0 5 V
+0 2 V
+0 1 V
+0 1 V
+0 1 V
+0 13 V
+28 -341 R
+0 244 V
+0 66 V
+0 9 V
+0 4 V
+0 2 V
+0 1 V
+0 1 V
+0 25 V
+28 -226 R
+0 173 V
+0 12 V
+0 8 V
+0 5 V
+0 1 V
+0 1 V
+28 -182 R
+0 156 V
+0 13 V
+0 7 V
+0 4 V
+0 1 V
+0 1 V
+0 8 V
+0 19 V
+28 -233 R
+0 156 V
+0 38 V
+0 6 V
+0 2 V
+0 3 V
+0 2 V
+0 17 V
+28 -282 R
+0 243 V
+0 11 V
+0 6 V
+0 3 V
+0 1 V
+0 1 V
+29 -187 R
+0 166 V
+0 11 V
+0 5 V
+0 3 V
+0 1 V
+0 1 V
+0 31 V
+28 -274 R
+0 225 V
+0 9 V
+0 5 V
+0 2 V
+0 1 V
+0 22 V
+28 -256 R
+0 218 V
+0 9 V
+0 4 V
+0 2 V
+0 1 V
+stroke 4551 4441 M
+0 1 V
+0 22 V
+28 -253 R
+0 213 V
+0 10 V
+0 4 V
+0 2 V
+0 -1 V
+0 2 V
+0 28 V
+0 1 V
+28 -260 R
+0 215 V
+0 8 V
+0 -5 V
+0 -3 V
+0 7 V
+0 10 V
+0 30 V
+28 -201 R
+0 158 V
+0 7 V
+0 3 V
+0 2 V
+0 -1 V
+0 2 V
+0 10 V
+28 -228 R
+0 197 V
+0 15 V
+0 4 V
+0 1 V
+0 1 V
+0 23 V
+28 -237 R
+0 190 V
+0 19 V
+0 3 V
+0 -2 V
+0 4 V
+0 13 V
+0 2 V
+28 -219 R
+0 185 V
+0 14 V
+0 4 V
+0 1 V
+0 9 V
+28 -213 R
+0 172 V
+0 8 V
+0 4 V
+0 2 V
+0 11 V
+0 14 V
+28 -176 R
+0 143 V
+0 18 V
+0 -3 V
+0 7 V
+0 1 V
+0 2 V
+29 -218 R
+0 170 V
+0 25 V
+0 4 V
+0 3 V
+0 3 V
+0 -14 V
+28 -172 R
+0 129 V
+0 8 V
+0 -1 V
+0 2 V
+0 14 V
+0 6 V
+28 -156 R
+0 116 V
+0 7 V
+0 1 V
+0 4 V
+0 10 V
+0 9 V
+28 -178 R
+0 134 V
+0 3 V
+0 3 V
+0 1 V
+0 14 V
+28 -146 R
+0 115 V
+0 2 V
+0 1 V
+0 1 V
+0 1 V
+0 15 V
+28 -149 R
+0 124 V
+0 2 V
+0 9 V
+0 -3 V
+0 14 V
+28 -145 R
+0 121 V
+stroke 4972 4330 M
+0 3 V
+0 1 V
+0 12 V
+0 4 V
+0 2 V
+28 -140 R
+0 120 V
+0 2 V
+0 1 V
+0 20 V
+28 -127 R
+0 103 V
+0 3 V
+0 1 V
+0 -1 V
+0 21 V
+28 -143 R
+0 115 V
+0 3 V
+0 5 V
+0 11 V
+28 -132 R
+0 115 V
+0 1 V
+0 -4 V
+0 22 V
+0 4 V
+28 -134 R
+0 106 V
+0 4 V
+0 7 V
+0 14 V
+29 -134 R
+0 110 V
+0 -3 V
+0 10 V
+0 -1 V
+0 12 V
+28 -134 R
+0 103 V
+0 2 V
+0 18 V
+0 -3 V
+0 6 V
+28 -126 R
+0 99 V
+0 7 V
+0 -2 V
+0 11 V
+0 6 V
+28 -118 R
+0 79 V
+0 8 V
+0 5 V
+0 5 V
+28 -114 R
+0 73 V
+0 8 V
+0 8 V
+0 -1 V
+28 -97 R
+0 49 V
+0 1 V
+0 -4 V
+0 6 V
+28 -86 R
+0 44 V
+0 2 V
+0 6 V
+0 1 V
+28 -74 R
+0 39 V
+0 1 V
+0 3 V
+0 3 V
+28 -64 R
+0 37 V
+0 -1 V
+0 2 V
+28 -55 R
+0 32 V
+0 3 V
+0 1 V
+0 2 V
+28 -51 R
+0 31 V
+0 3 V
+29 -49 R
+0 31 V
+0 2 V
+28 -38 R
+0 25 V
+28 -34 R
+0 24 V
+0 -1 V
+0 -1 V
+28 -28 R
+0 19 V
+0 2 V
+28 -33 R
+0 24 V
+0 1 V
+28 -33 R
+0 24 V
+stroke 5590 4052 M
+0 2 V
+28 -24 R
+0 17 V
+28 -24 R
+0 18 V
+0 1 V
+28 -22 R
+0 16 V
+28 -19 R
+0 15 V
+0 -4 V
+28 -14 R
+0 14 V
+28 -19 R
+0 11 V
+0 3 V
+29 -26 R
+0 19 V
+0 -2 V
+28 -18 R
+0 15 V
+28 -22 R
+0 22 V
+28 -24 R
+0 20 V
+28 -30 R
+0 29 V
+28 -18 R
+0 17 V
+28 -20 R
+0 18 V
+28 -19 R
+0 18 V
+28 -17 R
+0 15 V
+28 -17 R
+28 -3 R
+29 -1 R
+28 -2 R
+28 0 R
+28 -3 R
+28 -24 R
+1317 701 CircleF
+1317 1443 CircleF
+1317 2780 CircleF
+1317 2944 CircleF
+1317 3084 CircleF
+1317 3218 CircleF
+1317 3358 CircleF
+1317 3221 CircleF
+1317 3523 CircleF
+1317 3601 CircleF
+1317 3634 CircleF
+1317 3655 CircleF
+1317 3578 CircleF
+1317 3635 CircleF
+1317 3677 CircleF
+1317 3653 CircleF
+1317 3646 CircleF
+1317 3664 CircleF
+1317 3688 CircleF
+1317 3681 CircleF
+1317 3681 CircleF
+1317 3688 CircleF
+1317 3691 CircleF
+1317 3693 CircleF
+1317 3694 CircleF
+1521 2637 CircleF
+1521 2780 CircleF
+1521 2819 CircleF
+1521 2740 CircleF
+1521 3235 CircleF
+1521 3378 CircleF
+1521 3405 CircleF
+1521 3617 CircleF
+1521 3702 CircleF
+1521 3754 CircleF
+1521 3789 CircleF
+1521 3811 CircleF
+1521 3823 CircleF
+1521 3830 CircleF
+1521 3834 CircleF
+1521 3833 CircleF
+1521 3834 CircleF
+1521 3832 CircleF
+1521 3837 CircleF
+1521 3835 CircleF
+1521 3836 CircleF
+1521 3841 CircleF
+1521 3836 CircleF
+1521 3836 CircleF
+1641 2714 CircleF
+1641 2899 CircleF
+1641 3049 CircleF
+1641 2828 CircleF
+1641 3305 CircleF
+1641 3468 CircleF
+1641 3596 CircleF
+1641 3692 CircleF
+1641 3790 CircleF
+1641 3846 CircleF
+1641 3886 CircleF
+1641 3904 CircleF
+1641 3916 CircleF
+1641 3922 CircleF
+1641 3923 CircleF
+1641 3927 CircleF
+1641 3928 CircleF
+1641 3925 CircleF
+1641 3917 CircleF
+1641 3928 CircleF
+1641 3928 CircleF
+1641 3929 CircleF
+1641 3928 CircleF
+1726 2787 CircleF
+1726 2946 CircleF
+1726 3092 CircleF
+1726 3231 CircleF
+1726 3356 CircleF
+1726 3521 CircleF
+1726 3677 CircleF
+1726 3765 CircleF
+1726 3854 CircleF
+1726 3911 CircleF
+1726 3949 CircleF
+1726 3971 CircleF
+1726 3981 CircleF
+1726 3987 CircleF
+1726 3991 CircleF
+1726 3992 CircleF
+1726 3993 CircleF
+1726 3993 CircleF
+1726 3991 CircleF
+1726 3995 CircleF
+1726 3994 CircleF
+1726 4001 CircleF
+1726 3999 CircleF
+1791 2806 CircleF
+1791 2960 CircleF
+1791 3109 CircleF
+1791 3254 CircleF
+1791 3433 CircleF
+1791 3576 CircleF
+1791 3725 CircleF
+1791 3803 CircleF
+1791 3880 CircleF
+1791 3936 CircleF
+1791 3976 CircleF
+1791 3998 CircleF
+1791 4004 CircleF
+1791 4011 CircleF
+1791 4014 CircleF
+1791 4016 CircleF
+1791 4042 CircleF
+1791 4044 CircleF
+1791 4044 CircleF
+1791 4044 CircleF
+1791 4044 CircleF
+1791 4042 CircleF
+1845 2858 CircleF
+1845 3045 CircleF
+1845 3171 CircleF
+1845 2925 CircleF
+1845 3503 CircleF
+1845 3653 CircleF
+1845 3746 CircleF
+1845 3851 CircleF
+1845 3953 CircleF
+1845 4001 CircleF
+1845 4029 CircleF
+1845 4054 CircleF
+1845 4070 CircleF
+1845 4062 CircleF
+1845 4076 CircleF
+1845 4078 CircleF
+1845 4062 CircleF
+1845 4079 CircleF
+1845 4079 CircleF
+1845 4079 CircleF
+1845 4079 CircleF
+1845 4079 CircleF
+1890 2908 CircleF
+1890 3083 CircleF
+1890 3213 CircleF
+1890 3023 CircleF
+1890 3497 CircleF
+1890 3639 CircleF
+1890 3779 CircleF
+1890 3888 CircleF
+1890 3980 CircleF
+1890 4029 CircleF
+1890 4070 CircleF
+1890 4087 CircleF
+1890 4098 CircleF
+1890 4104 CircleF
+1890 4108 CircleF
+1890 4109 CircleF
+1890 4109 CircleF
+1890 4110 CircleF
+1890 4110 CircleF
+1890 4111 CircleF
+1890 4110 CircleF
+1890 4109 CircleF
+1930 2927 CircleF
+1930 3088 CircleF
+1930 3233 CircleF
+1930 3000 CircleF
+1930 3564 CircleF
+1930 3676 CircleF
+1930 3801 CircleF
+1930 3911 CircleF
+1930 3996 CircleF
+1930 4051 CircleF
+1930 4080 CircleF
+1930 4105 CircleF
+1930 4115 CircleF
+1930 4121 CircleF
+1930 4124 CircleF
+1930 4125 CircleF
+1930 4125 CircleF
+1930 4126 CircleF
+1930 4126 CircleF
+1930 4126 CircleF
+1930 4126 CircleF
+1930 4126 CircleF
+1965 2929 CircleF
+1965 3132 CircleF
+1965 3257 CircleF
+1965 3301 CircleF
+1965 3559 CircleF
+1965 3700 CircleF
+1965 3836 CircleF
+1965 3940 CircleF
+1965 4015 CircleF
+1965 4061 CircleF
+1965 4098 CircleF
+1965 4114 CircleF
+1965 4123 CircleF
+1965 4129 CircleF
+1965 4132 CircleF
+1965 4130 CircleF
+1965 4134 CircleF
+1965 4134 CircleF
+1965 4130 CircleF
+1965 4134 CircleF
+1965 4134 CircleF
+1996 2983 CircleF
+1996 3145 CircleF
+1996 3290 CircleF
+1996 3101 CircleF
+1996 3586 CircleF
+1996 3752 CircleF
+1996 3847 CircleF
+1996 3941 CircleF
+1996 4022 CircleF
+1996 4074 CircleF
+1996 4101 CircleF
+1996 4118 CircleF
+1996 4127 CircleF
+1996 4132 CircleF
+1996 4133 CircleF
+1996 4135 CircleF
+1996 4134 CircleF
+1996 4135 CircleF
+1996 4136 CircleF
+1996 4136 CircleF
+1996 4135 CircleF
+2024 2966 CircleF
+2024 3172 CircleF
+2024 3299 CircleF
+2024 3162 CircleF
+2024 3620 CircleF
+2024 3611 CircleF
+2024 3869 CircleF
+2024 3958 CircleF
+2024 4034 CircleF
+2024 4050 CircleF
+2024 4084 CircleF
+2024 4098 CircleF
+2024 4106 CircleF
+2024 4110 CircleF
+2024 4112 CircleF
+2024 4141 CircleF
+2024 4142 CircleF
+2024 4141 CircleF
+2024 4142 CircleF
+2024 4142 CircleF
+2024 4142 CircleF
+2049 2997 CircleF
+2049 3175 CircleF
+2049 3310 CircleF
+2049 3142 CircleF
+2049 3595 CircleF
+2049 3765 CircleF
+2049 3878 CircleF
+2049 3984 CircleF
+2049 4046 CircleF
+2049 4086 CircleF
+2049 4113 CircleF
+2049 4124 CircleF
+2049 4132 CircleF
+2049 4137 CircleF
+2049 4138 CircleF
+2049 4139 CircleF
+2049 4140 CircleF
+2049 4140 CircleF
+2049 4140 CircleF
+2049 4140 CircleF
+2049 4140 CircleF
+2073 3035 CircleF
+2073 3192 CircleF
+2073 3348 CircleF
+2073 3172 CircleF
+2073 3660 CircleF
+2073 3783 CircleF
+2073 3887 CircleF
+2073 3995 CircleF
+2073 4047 CircleF
+2073 4091 CircleF
+2073 4113 CircleF
+2073 4130 CircleF
+2073 4137 CircleF
+2073 4141 CircleF
+2073 4143 CircleF
+2073 4144 CircleF
+2073 4145 CircleF
+2073 4144 CircleF
+2073 4145 CircleF
+2073 4145 CircleF
+2073 4112 CircleF
+2095 3067 CircleF
+2095 3223 CircleF
+2095 3375 CircleF
+2095 3238 CircleF
+2095 3649 CircleF
+2095 3810 CircleF
+2095 3926 CircleF
+2095 4021 CircleF
+2095 4097 CircleF
+2095 4149 CircleF
+2095 4174 CircleF
+2095 4188 CircleF
+2095 4196 CircleF
+2095 4200 CircleF
+2095 4202 CircleF
+2095 4203 CircleF
+2095 4200 CircleF
+2095 4202 CircleF
+2095 4204 CircleF
+2095 4204 CircleF
+2095 4204 CircleF
+2115 3088 CircleF
+2115 3247 CircleF
+2115 3387 CircleF
+2115 3536 CircleF
+2115 3640 CircleF
+2115 3822 CircleF
+2115 3930 CircleF
+2115 4029 CircleF
+2115 4086 CircleF
+2115 4125 CircleF
+2115 4147 CircleF
+2115 4155 CircleF
+2115 4164 CircleF
+2115 4167 CircleF
+2115 4169 CircleF
+2115 4170 CircleF
+2115 4171 CircleF
+2115 4170 CircleF
+2115 4161 CircleF
+2115 4171 CircleF
+2115 4171 CircleF
+2134 3106 CircleF
+2134 3258 CircleF
+2134 3420 CircleF
+2134 3134 CircleF
+2134 3665 CircleF
+2134 3836 CircleF
+2134 3954 CircleF
+2134 4038 CircleF
+2134 4095 CircleF
+2134 4124 CircleF
+2134 4143 CircleF
+2134 4158 CircleF
+2134 4161 CircleF
+2134 4164 CircleF
+2134 4172 CircleF
+2134 4173 CircleF
+2134 4173 CircleF
+2134 4173 CircleF
+2134 4174 CircleF
+2134 4174 CircleF
+2134 4176 CircleF
+2152 3120 CircleF
+2152 3277 CircleF
+2152 3425 CircleF
+2152 3142 CircleF
+2152 3722 CircleF
+2152 3843 CircleF
+2152 3958 CircleF
+2152 4030 CircleF
+2152 4086 CircleF
+2152 4120 CircleF
+2152 4142 CircleF
+2152 4153 CircleF
+2152 4158 CircleF
+2152 4156 CircleF
+2152 4154 CircleF
+2152 4144 CircleF
+2152 4158 CircleF
+2152 4164 CircleF
+2152 4164 CircleF
+2152 4164 CircleF
+2169 3138 CircleF
+2169 3300 CircleF
+2169 3448 CircleF
+2169 3561 CircleF
+2169 3713 CircleF
+2169 3853 CircleF
+2169 3965 CircleF
+2169 4040 CircleF
+2169 4094 CircleF
+2169 4124 CircleF
+2169 4141 CircleF
+2169 4152 CircleF
+2169 4156 CircleF
+2169 4159 CircleF
+2169 4160 CircleF
+2169 4161 CircleF
+2169 4161 CircleF
+2169 4157 CircleF
+2169 4170 CircleF
+2169 4174 CircleF
+2185 3144 CircleF
+2185 3310 CircleF
+2185 3472 CircleF
+2185 3606 CircleF
+2185 3741 CircleF
+2185 3863 CircleF
+2185 3962 CircleF
+2185 4035 CircleF
+2185 4081 CircleF
+2185 4109 CircleF
+2185 4124 CircleF
+2185 4132 CircleF
+2185 4137 CircleF
+2185 4139 CircleF
+2185 4140 CircleF
+2185 4121 CircleF
+2185 4140 CircleF
+2185 4144 CircleF
+2185 4143 CircleF
+2185 4156 CircleF
+2200 3162 CircleF
+2200 3311 CircleF
+2200 3481 CircleF
+2200 3609 CircleF
+2200 3729 CircleF
+2200 3873 CircleF
+2200 3959 CircleF
+2200 4042 CircleF
+2200 4088 CircleF
+2200 4114 CircleF
+2200 4128 CircleF
+2200 4135 CircleF
+2200 4140 CircleF
+2200 4140 CircleF
+2200 4143 CircleF
+2200 4144 CircleF
+2200 4131 CircleF
+2200 4145 CircleF
+2200 4148 CircleF
+2200 4146 CircleF
+2228 3177 CircleF
+2228 3328 CircleF
+2228 3489 CircleF
+2228 3596 CircleF
+2228 3754 CircleF
+2228 3916 CircleF
+2228 4027 CircleF
+2228 4109 CircleF
+2228 4169 CircleF
+2228 4210 CircleF
+2228 4233 CircleF
+2228 4244 CircleF
+2228 4250 CircleF
+2228 4254 CircleF
+2228 4256 CircleF
+2228 4257 CircleF
+2228 4257 CircleF
+2228 4257 CircleF
+2228 4258 CircleF
+2228 4258 CircleF
+2254 3094 CircleF
+2254 3358 CircleF
+2254 3510 CircleF
+2254 3638 CircleF
+2254 3780 CircleF
+2254 3927 CircleF
+2254 4027 CircleF
+2254 4109 CircleF
+2254 4171 CircleF
+2254 4200 CircleF
+2254 4221 CircleF
+2254 4231 CircleF
+2254 4237 CircleF
+2254 4240 CircleF
+2254 4241 CircleF
+2254 4242 CircleF
+2254 4242 CircleF
+2254 4242 CircleF
+2254 4242 CircleF
+2254 4252 CircleF
+2277 3206 CircleF
+2277 3368 CircleF
+2277 3530 CircleF
+2277 3670 CircleF
+2277 3780 CircleF
+2277 3936 CircleF
+2277 4033 CircleF
+2277 4105 CircleF
+2277 4143 CircleF
+2277 4175 CircleF
+2277 4194 CircleF
+2277 4202 CircleF
+2277 4207 CircleF
+2277 4210 CircleF
+2277 4211 CircleF
+2277 4211 CircleF
+2277 4214 CircleF
+2277 4212 CircleF
+2277 4224 CircleF
+2277 4227 CircleF
+2299 3233 CircleF
+2299 3407 CircleF
+2299 3533 CircleF
+2299 3671 CircleF
+2299 3805 CircleF
+2299 3943 CircleF
+2299 4035 CircleF
+2299 4106 CircleF
+2299 4148 CircleF
+2299 4170 CircleF
+2299 4187 CircleF
+2299 4191 CircleF
+2299 4200 CircleF
+2299 4198 CircleF
+2299 4203 CircleF
+2299 4204 CircleF
+2299 4209 CircleF
+2299 4205 CircleF
+2299 4211 CircleF
+2299 4210 CircleF
+2319 3264 CircleF
+2319 3415 CircleF
+2319 3545 CircleF
+2319 3712 CircleF
+2319 3839 CircleF
+2319 3975 CircleF
+2319 4093 CircleF
+2319 4176 CircleF
+2319 4231 CircleF
+2319 4271 CircleF
+2319 4293 CircleF
+2319 4299 CircleF
+2319 4310 CircleF
+2319 4312 CircleF
+2319 4314 CircleF
+2319 4315 CircleF
+2319 4315 CircleF
+2319 4327 CircleF
+2319 4322 CircleF
+2319 4328 CircleF
+2347 3259 CircleF
+2347 3421 CircleF
+2347 3592 CircleF
+2347 3717 CircleF
+2347 3826 CircleF
+2347 3985 CircleF
+2347 4087 CircleF
+2347 4157 CircleF
+2347 4197 CircleF
+2347 4231 CircleF
+2347 4249 CircleF
+2347 4256 CircleF
+2347 4262 CircleF
+2347 4264 CircleF
+2347 4265 CircleF
+2347 4266 CircleF
+2347 4263 CircleF
+2347 4279 CircleF
+2347 4277 CircleF
+2373 3308 CircleF
+2373 3435 CircleF
+2373 3609 CircleF
+2373 3741 CircleF
+2373 3878 CircleF
+2373 3985 CircleF
+2373 4074 CircleF
+2373 4155 CircleF
+2373 4193 CircleF
+2373 4221 CircleF
+2373 4235 CircleF
+2373 4242 CircleF
+2373 4246 CircleF
+2373 4244 CircleF
+2373 4249 CircleF
+2373 4249 CircleF
+2373 4252 CircleF
+2373 4254 CircleF
+2373 4257 CircleF
+2397 3325 CircleF
+2397 3478 CircleF
+2397 3631 CircleF
+2397 3752 CircleF
+2397 3907 CircleF
+2397 4033 CircleF
+2397 4134 CircleF
+2397 4217 CircleF
+2397 4261 CircleF
+2397 4296 CircleF
+2397 4316 CircleF
+2397 4326 CircleF
+2397 4321 CircleF
+2397 4334 CircleF
+2397 4335 CircleF
+2397 4336 CircleF
+2397 4336 CircleF
+2397 4339 CircleF
+2397 4349 CircleF
+2419 3306 CircleF
+2419 3477 CircleF
+2419 3632 CircleF
+2419 3754 CircleF
+2419 3914 CircleF
+2419 4033 CircleF
+2419 4119 CircleF
+2419 4197 CircleF
+2419 4240 CircleF
+2419 4266 CircleF
+2419 4279 CircleF
+2419 4287 CircleF
+2419 4292 CircleF
+2419 4291 CircleF
+2419 4295 CircleF
+2419 4295 CircleF
+2419 4296 CircleF
+2419 4297 CircleF
+2419 4307 CircleF
+2445 3341 CircleF
+2445 3483 CircleF
+2445 3658 CircleF
+2445 3808 CircleF
+2445 3921 CircleF
+2445 4071 CircleF
+2445 4178 CircleF
+2445 4249 CircleF
+2445 4300 CircleF
+2445 4333 CircleF
+2445 4352 CircleF
+2445 4361 CircleF
+2445 4365 CircleF
+2445 4367 CircleF
+2445 4368 CircleF
+2445 4373 CircleF
+2445 4369 CircleF
+2445 4369 CircleF
+2445 4383 CircleF
+2470 3380 CircleF
+2470 3532 CircleF
+2470 3684 CircleF
+2470 3800 CircleF
+2470 3943 CircleF
+2470 4051 CircleF
+2470 4150 CircleF
+2470 4227 CircleF
+2470 4270 CircleF
+2470 4296 CircleF
+2470 4309 CircleF
+2470 4316 CircleF
+2470 4320 CircleF
+2470 4319 CircleF
+2470 4323 CircleF
+2470 4320 CircleF
+2470 4323 CircleF
+2470 4334 CircleF
+2470 4336 CircleF
+2498 3391 CircleF
+2498 3541 CircleF
+2498 3667 CircleF
+2498 3829 CircleF
+2498 3959 CircleF
+2498 4101 CircleF
+2498 4198 CircleF
+2498 4270 CircleF
+2498 4317 CircleF
+2498 4339 CircleF
+2498 4358 CircleF
+2498 4363 CircleF
+2498 4370 CircleF
+2498 4371 CircleF
+2498 4372 CircleF
+2498 4373 CircleF
+2498 4374 CircleF
+2498 4384 CircleF
+2498 4386 CircleF
+2524 3407 CircleF
+2524 3558 CircleF
+2524 3704 CircleF
+2524 3853 CircleF
+2524 3984 CircleF
+2524 4081 CircleF
+2524 4176 CircleF
+2524 4240 CircleF
+2524 4277 CircleF
+2524 4298 CircleF
+2524 4309 CircleF
+2524 4316 CircleF
+2524 4319 CircleF
+2524 4320 CircleF
+2524 4321 CircleF
+2524 4318 CircleF
+2524 4321 CircleF
+2524 4330 CircleF
+2524 4336 CircleF
+2552 3447 CircleF
+2552 3594 CircleF
+2552 3746 CircleF
+2552 3869 CircleF
+2552 4006 CircleF
+2552 4104 CircleF
+2552 4211 CircleF
+2552 4272 CircleF
+2552 4307 CircleF
+2552 4331 CircleF
+2552 4343 CircleF
+2552 4349 CircleF
+2552 4353 CircleF
+2552 4351 CircleF
+2552 4355 CircleF
+2552 4355 CircleF
+2552 4364 CircleF
+2552 4361 CircleF
+2577 3445 CircleF
+2577 3611 CircleF
+2577 3761 CircleF
+2577 3876 CircleF
+2577 4022 CircleF
+2577 4146 CircleF
+2577 4223 CircleF
+2577 4288 CircleF
+2577 4332 CircleF
+2577 4354 CircleF
+2577 4367 CircleF
+2577 4373 CircleF
+2577 4376 CircleF
+2577 4377 CircleF
+2577 4378 CircleF
+2577 4379 CircleF
+2577 4385 CircleF
+2577 4386 CircleF
+2605 3445 CircleF
+2605 3587 CircleF
+2605 3746 CircleF
+2605 3871 CircleF
+2605 4041 CircleF
+2605 4167 CircleF
+2605 4239 CircleF
+2605 4311 CircleF
+2605 4347 CircleF
+2605 4375 CircleF
+2605 4389 CircleF
+2605 4395 CircleF
+2605 4400 CircleF
+2605 4401 CircleF
+2605 4402 CircleF
+2605 4400 CircleF
+2605 4404 CircleF
+2605 4411 CircleF
+2630 3468 CircleF
+2630 3640 CircleF
+2630 3791 CircleF
+2630 3925 CircleF
+2630 4072 CircleF
+2630 4176 CircleF
+2630 4266 CircleF
+2630 4333 CircleF
+2630 4372 CircleF
+2630 4394 CircleF
+2630 4408 CircleF
+2630 4412 CircleF
+2630 4417 CircleF
+2630 4393 CircleF
+2630 4394 CircleF
+2630 4394 CircleF
+2630 4416 CircleF
+2630 4420 CircleF
+2656 3486 CircleF
+2656 3679 CircleF
+2656 3793 CircleF
+2656 3518 CircleF
+2656 3937 CircleF
+2656 4074 CircleF
+2656 4188 CircleF
+2656 4268 CircleF
+2656 4305 CircleF
+2656 4329 CircleF
+2656 4339 CircleF
+2656 4344 CircleF
+2656 4346 CircleF
+2656 4348 CircleF
+2656 4351 CircleF
+2656 4345 CircleF
+2656 4360 CircleF
+2656 4385 CircleF
+2683 3444 CircleF
+2683 3586 CircleF
+2683 3727 CircleF
+2683 3888 CircleF
+2683 4014 CircleF
+2683 4147 CircleF
+2683 4217 CircleF
+2683 4274 CircleF
+2683 4310 CircleF
+2683 4330 CircleF
+2683 4340 CircleF
+2683 4345 CircleF
+2683 4349 CircleF
+2683 4350 CircleF
+2683 4351 CircleF
+2683 4355 CircleF
+2683 4362 CircleF
+2683 4386 CircleF
+2710 3498 CircleF
+2710 3664 CircleF
+2710 3310 CircleF
+2710 3910 CircleF
+2710 4018 CircleF
+2710 4130 CircleF
+2710 4216 CircleF
+2710 4269 CircleF
+2710 4294 CircleF
+2710 4317 CircleF
+2710 4327 CircleF
+2710 4332 CircleF
+2710 4333 CircleF
+2710 4331 CircleF
+2710 4333 CircleF
+2710 4356 CircleF
+2710 4352 CircleF
+2710 4363 CircleF
+2738 3508 CircleF
+2738 3647 CircleF
+2738 3552 CircleF
+2738 3800 CircleF
+2738 3734 CircleF
+2738 4137 CircleF
+2738 4222 CircleF
+2738 4257 CircleF
+2738 4290 CircleF
+2738 4302 CircleF
+2738 4313 CircleF
+2738 4309 CircleF
+2738 4318 CircleF
+2738 4319 CircleF
+2738 4318 CircleF
+2738 4321 CircleF
+2738 4313 CircleF
+2738 4316 CircleF
+2765 3530 CircleF
+2765 3680 CircleF
+2765 3475 CircleF
+2765 3608 CircleF
+2765 4026 CircleF
+2765 4171 CircleF
+2765 4229 CircleF
+2765 4284 CircleF
+2765 4322 CircleF
+2765 4337 CircleF
+2765 4346 CircleF
+2765 4350 CircleF
+2765 4351 CircleF
+2765 4352 CircleF
+2765 4330 CircleF
+2765 4356 CircleF
+2765 4347 CircleF
+2792 3540 CircleF
+2792 3701 CircleF
+2792 3822 CircleF
+2792 3926 CircleF
+2792 4071 CircleF
+2792 4168 CircleF
+2792 4224 CircleF
+2792 4272 CircleF
+2792 4302 CircleF
+2792 4316 CircleF
+2792 4323 CircleF
+2792 4325 CircleF
+2792 4327 CircleF
+2792 4328 CircleF
+2792 4304 CircleF
+2792 4325 CircleF
+2792 4323 CircleF
+2818 3571 CircleF
+2818 3711 CircleF
+2818 3393 CircleF
+2818 3983 CircleF
+2818 4100 CircleF
+2818 4181 CircleF
+2818 4259 CircleF
+2818 4299 CircleF
+2818 4324 CircleF
+2818 4311 CircleF
+2818 4318 CircleF
+2818 4322 CircleF
+2818 4323 CircleF
+2818 4326 CircleF
+2818 4327 CircleF
+2818 4340 CircleF
+2818 4341 CircleF
+2846 3597 CircleF
+2846 3771 CircleF
+2846 3411 CircleF
+2846 3982 CircleF
+2846 4122 CircleF
+2846 4125 CircleF
+2846 4256 CircleF
+2846 4307 CircleF
+2846 4325 CircleF
+2846 4340 CircleF
+2846 4348 CircleF
+2846 4351 CircleF
+2846 4352 CircleF
+2846 4353 CircleF
+2846 4353 CircleF
+2846 4341 CircleF
+2846 4348 CircleF
+2872 3627 CircleF
+2872 3787 CircleF
+2872 3852 CircleF
+2872 3994 CircleF
+2872 4084 CircleF
+2872 4175 CircleF
+2872 4279 CircleF
+2872 4306 CircleF
+2872 4335 CircleF
+2872 4347 CircleF
+2872 4352 CircleF
+2872 4356 CircleF
+2872 4332 CircleF
+2872 4346 CircleF
+2872 4360 CircleF
+2872 4354 CircleF
+2872 4360 CircleF
+2900 3610 CircleF
+2900 3758 CircleF
+2900 3923 CircleF
+2900 4033 CircleF
+2900 4160 CircleF
+2900 4248 CircleF
+2900 4295 CircleF
+2900 4346 CircleF
+2900 4368 CircleF
+2900 4380 CircleF
+2900 4386 CircleF
+2900 4389 CircleF
+2900 4391 CircleF
+2900 4391 CircleF
+2900 4381 CircleF
+2900 4393 CircleF
+2900 4393 CircleF
+2927 3596 CircleF
+2927 3792 CircleF
+2927 3612 CircleF
+2927 4051 CircleF
+2927 4141 CircleF
+2927 4208 CircleF
+2927 4289 CircleF
+2927 4329 CircleF
+2927 4348 CircleF
+2927 4356 CircleF
+2927 4363 CircleF
+2927 4365 CircleF
+2927 4367 CircleF
+2927 4368 CircleF
+2927 4362 CircleF
+2927 4360 CircleF
+2927 4368 CircleF
+2955 3611 CircleF
+2955 3801 CircleF
+2955 3592 CircleF
+2955 3769 CircleF
+2955 3935 CircleF
+2955 4029 CircleF
+2955 4306 CircleF
+2955 4341 CircleF
+2955 4360 CircleF
+2955 4370 CircleF
+2955 4375 CircleF
+2955 4378 CircleF
+2955 4380 CircleF
+2955 4381 CircleF
+2955 4357 CircleF
+2955 4381 CircleF
+2982 3657 CircleF
+2982 3816 CircleF
+2982 3845 CircleF
+2982 4060 CircleF
+2982 4184 CircleF
+2982 4185 CircleF
+2982 4316 CircleF
+2982 4348 CircleF
+2982 4362 CircleF
+2982 4372 CircleF
+2982 4377 CircleF
+2982 4379 CircleF
+2982 4381 CircleF
+2982 4380 CircleF
+2982 4276 CircleF
+2982 4380 CircleF
+3009 3688 CircleF
+3009 3846 CircleF
+3009 3938 CircleF
+3009 4069 CircleF
+3009 4186 CircleF
+3009 4283 CircleF
+3009 4310 CircleF
+3009 4364 CircleF
+3009 4383 CircleF
+3009 4393 CircleF
+3009 4398 CircleF
+3009 4399 CircleF
+3009 4401 CircleF
+3009 4399 CircleF
+3009 4403 CircleF
+3009 4403 CircleF
+3037 3709 CircleF
+3037 3862 CircleF
+3037 3734 CircleF
+3037 4128 CircleF
+3037 3959 CircleF
+3037 4280 CircleF
+3037 4348 CircleF
+3037 4377 CircleF
+3037 4391 CircleF
+3037 4401 CircleF
+3037 4406 CircleF
+3037 4408 CircleF
+3037 4408 CircleF
+3037 4410 CircleF
+3037 4406 CircleF
+3037 4403 CircleF
+3065 3733 CircleF
+3065 3878 CircleF
+3065 3704 CircleF
+3065 4105 CircleF
+3065 4214 CircleF
+3065 4291 CircleF
+3065 4351 CircleF
+3065 4373 CircleF
+3065 4390 CircleF
+3065 4399 CircleF
+3065 4403 CircleF
+3065 4404 CircleF
+3065 4406 CircleF
+3065 4405 CircleF
+3065 4406 CircleF
+3065 4407 CircleF
+3093 3752 CircleF
+3093 3925 CircleF
+3093 3681 CircleF
+3093 4157 CircleF
+3093 4245 CircleF
+3093 4307 CircleF
+3093 4366 CircleF
+3093 4387 CircleF
+3093 4403 CircleF
+3093 4411 CircleF
+3093 4413 CircleF
+3093 4417 CircleF
+3093 4418 CircleF
+3093 4418 CircleF
+3093 4402 CircleF
+3093 4409 CircleF
+3121 3759 CircleF
+3121 3953 CircleF
+3121 3981 CircleF
+3121 4150 CircleF
+3121 4238 CircleF
+3121 4306 CircleF
+3121 4368 CircleF
+3121 4392 CircleF
+3121 4404 CircleF
+3121 4412 CircleF
+3121 4415 CircleF
+3121 4417 CircleF
+3121 4415 CircleF
+3121 4414 CircleF
+3121 4417 CircleF
+3121 4419 CircleF
+3148 3785 CircleF
+3148 3951 CircleF
+3148 4076 CircleF
+3148 4157 CircleF
+3148 4258 CircleF
+3148 4323 CircleF
+3148 4359 CircleF
+3148 4383 CircleF
+3148 4394 CircleF
+3148 4400 CircleF
+3148 4402 CircleF
+3148 4387 CircleF
+3148 4379 CircleF
+3148 4398 CircleF
+3148 4405 CircleF
+3148 4405 CircleF
+3177 3550 CircleF
+3177 3932 CircleF
+3177 3774 CircleF
+3177 3912 CircleF
+3177 4174 CircleF
+3177 4342 CircleF
+3177 4382 CircleF
+3177 4400 CircleF
+3177 4413 CircleF
+3177 4419 CircleF
+3177 4421 CircleF
+3177 4423 CircleF
+3177 4423 CircleF
+3177 4423 CircleF
+3177 4423 CircleF
+3205 3855 CircleF
+3205 3962 CircleF
+3205 4085 CircleF
+3205 4213 CircleF
+3205 4278 CircleF
+3205 4339 CircleF
+3205 4374 CircleF
+3205 4389 CircleF
+3205 4399 CircleF
+3205 4405 CircleF
+3205 4407 CircleF
+3205 4409 CircleF
+3205 4409 CircleF
+3205 4409 CircleF
+3205 4410 CircleF
+3232 3860 CircleF
+3232 4007 CircleF
+3232 4067 CircleF
+3232 4226 CircleF
+3232 4304 CircleF
+3232 4354 CircleF
+3232 4385 CircleF
+3232 4402 CircleF
+3232 4411 CircleF
+3232 4417 CircleF
+3232 4415 CircleF
+3232 4414 CircleF
+3232 4421 CircleF
+3232 4413 CircleF
+3232 4421 CircleF
+3260 3891 CircleF
+3260 4029 CircleF
+3260 3804 CircleF
+3260 4238 CircleF
+3260 4316 CircleF
+3260 4361 CircleF
+3260 4388 CircleF
+3260 4400 CircleF
+3260 4410 CircleF
+3260 4415 CircleF
+3260 4417 CircleF
+3260 4418 CircleF
+3260 4418 CircleF
+3260 4419 CircleF
+3260 4411 CircleF
+3288 3887 CircleF
+3288 4020 CircleF
+3288 4143 CircleF
+3288 4245 CircleF
+3288 4310 CircleF
+3288 4356 CircleF
+3288 4389 CircleF
+3288 4403 CircleF
+3288 4412 CircleF
+3288 4415 CircleF
+3288 4418 CircleF
+3288 4418 CircleF
+3288 4419 CircleF
+3288 4419 CircleF
+3288 4419 CircleF
+3316 3930 CircleF
+3316 4029 CircleF
+3316 3948 CircleF
+3316 4227 CircleF
+3316 4240 CircleF
+3316 4361 CircleF
+3316 4392 CircleF
+3316 4406 CircleF
+3316 4414 CircleF
+3316 4417 CircleF
+3316 4416 CircleF
+3316 4421 CircleF
+3316 4421 CircleF
+3316 4421 CircleF
+3316 4421 CircleF
+3344 3931 CircleF
+3344 4079 CircleF
+3344 4183 CircleF
+3344 4276 CircleF
+3344 4331 CircleF
+3344 4373 CircleF
+3344 4398 CircleF
+3344 4409 CircleF
+3344 4416 CircleF
+3344 4419 CircleF
+3344 4421 CircleF
+3344 4422 CircleF
+3344 4418 CircleF
+3344 4422 CircleF
+3344 4422 CircleF
+3372 3832 CircleF
+3372 4093 CircleF
+3372 4184 CircleF
+3372 4282 CircleF
+3372 4343 CircleF
+3372 4380 CircleF
+3372 4398 CircleF
+3372 4410 CircleF
+3372 4417 CircleF
+3372 4420 CircleF
+3372 4419 CircleF
+3372 4423 CircleF
+3372 4422 CircleF
+3372 4417 CircleF
+3400 3973 CircleF
+3400 4100 CircleF
+3400 4206 CircleF
+3400 4296 CircleF
+3400 4355 CircleF
+3400 4390 CircleF
+3400 4409 CircleF
+3400 4421 CircleF
+3400 4427 CircleF
+3400 4430 CircleF
+3400 4432 CircleF
+3400 4432 CircleF
+3400 4433 CircleF
+3400 4432 CircleF
+3428 3998 CircleF
+3428 4121 CircleF
+3428 4202 CircleF
+3428 4306 CircleF
+3428 4354 CircleF
+3428 4387 CircleF
+3428 4406 CircleF
+3428 4416 CircleF
+3428 4422 CircleF
+3428 4425 CircleF
+3428 4426 CircleF
+3428 4426 CircleF
+3428 4427 CircleF
+3428 4427 CircleF
+3456 4013 CircleF
+3456 4142 CircleF
+3456 3991 CircleF
+3456 4313 CircleF
+3456 4362 CircleF
+3456 4394 CircleF
+3456 4409 CircleF
+3456 4418 CircleF
+3456 4424 CircleF
+3456 4426 CircleF
+3456 4427 CircleF
+3456 4428 CircleF
+3456 4427 CircleF
+3456 4428 CircleF
+3484 3933 CircleF
+3484 4141 CircleF
+3484 4243 CircleF
+3484 4331 CircleF
+3484 4364 CircleF
+3484 4394 CircleF
+3484 4413 CircleF
+3484 4421 CircleF
+3484 4427 CircleF
+3484 4429 CircleF
+3484 4408 CircleF
+3484 4413 CircleF
+3484 4430 CircleF
+3484 4425 CircleF
+3512 4047 CircleF
+3512 4168 CircleF
+3512 4263 CircleF
+3512 4335 CircleF
+3512 4370 CircleF
+3512 4392 CircleF
+3512 4399 CircleF
+3512 4403 CircleF
+3512 4407 CircleF
+3512 4408 CircleF
+3512 4422 CircleF
+3512 4436 CircleF
+3512 4431 CircleF
+3512 4432 CircleF
+3540 4052 CircleF
+3540 4127 CircleF
+3540 4071 CircleF
+3540 4262 CircleF
+3540 4336 CircleF
+3540 4405 CircleF
+3540 4419 CircleF
+3540 4426 CircleF
+3540 4430 CircleF
+3540 4433 CircleF
+3540 4433 CircleF
+3540 4434 CircleF
+3540 4428 CircleF
+3540 4434 CircleF
+3568 3973 CircleF
+3568 3857 CircleF
+3568 4278 CircleF
+3568 4144 CircleF
+3568 4353 CircleF
+3568 4409 CircleF
+3568 4423 CircleF
+3568 4430 CircleF
+3568 4434 CircleF
+3568 4436 CircleF
+3568 4436 CircleF
+3568 4436 CircleF
+3568 4430 CircleF
+3596 4106 CircleF
+3596 4224 CircleF
+3596 4021 CircleF
+3596 4354 CircleF
+3596 4392 CircleF
+3596 4413 CircleF
+3596 4426 CircleF
+3596 4433 CircleF
+3596 4435 CircleF
+3596 4437 CircleF
+3596 4438 CircleF
+3596 4438 CircleF
+3596 4438 CircleF
+3624 4103 CircleF
+3624 4218 CircleF
+3624 4302 CircleF
+3624 4359 CircleF
+3624 4396 CircleF
+3624 4414 CircleF
+3624 4424 CircleF
+3624 4428 CircleF
+3624 4434 CircleF
+3624 4408 CircleF
+3624 4425 CircleF
+3624 4436 CircleF
+3624 4436 CircleF
+3652 4015 CircleF
+3652 4212 CircleF
+3652 4309 CircleF
+3652 4360 CircleF
+3652 4398 CircleF
+3652 4414 CircleF
+3652 4424 CircleF
+3652 4430 CircleF
+3652 4433 CircleF
+3652 4434 CircleF
+3652 4435 CircleF
+3652 4425 CircleF
+3652 4435 CircleF
+3680 4084 CircleF
+3680 4139 CircleF
+3680 4188 CircleF
+3680 4310 CircleF
+3680 4400 CircleF
+3680 4417 CircleF
+3680 4428 CircleF
+3680 4433 CircleF
+3680 4435 CircleF
+3680 4437 CircleF
+3680 4437 CircleF
+3680 4437 CircleF
+3680 4437 CircleF
+3709 4042 CircleF
+3709 4232 CircleF
+3709 4300 CircleF
+3709 4357 CircleF
+3709 4382 CircleF
+3709 4395 CircleF
+3709 4403 CircleF
+3709 4408 CircleF
+3709 4410 CircleF
+3709 4427 CircleF
+3709 4438 CircleF
+3709 4438 CircleF
+3709 4438 CircleF
+3737 4074 CircleF
+3737 4263 CircleF
+3737 4332 CircleF
+3737 4382 CircleF
+3737 4408 CircleF
+3737 4398 CircleF
+3737 4405 CircleF
+3737 4409 CircleF
+3737 4411 CircleF
+3737 4439 CircleF
+3737 4439 CircleF
+3737 4439 CircleF
+3737 4439 CircleF
+3765 4118 CircleF
+3765 3981 CircleF
+3765 4089 CircleF
+3765 4380 CircleF
+3765 4411 CircleF
+3765 4424 CircleF
+3765 4433 CircleF
+3765 4437 CircleF
+3765 4438 CircleF
+3765 4439 CircleF
+3765 4439 CircleF
+3765 4428 CircleF
+3765 4440 CircleF
+3793 4120 CircleF
+3793 3999 CircleF
+3793 4347 CircleF
+3793 4389 CircleF
+3793 4411 CircleF
+3793 4426 CircleF
+3793 4432 CircleF
+3793 4436 CircleF
+3793 4434 CircleF
+3793 4438 CircleF
+3793 4438 CircleF
+3793 4438 CircleF
+3821 4112 CircleF
+3821 4004 CircleF
+3821 4332 CircleF
+3821 4388 CircleF
+3821 4415 CircleF
+3821 4427 CircleF
+3821 4434 CircleF
+3821 4437 CircleF
+3821 4436 CircleF
+3821 4440 CircleF
+3821 4440 CircleF
+3821 4440 CircleF
+3849 4137 CircleF
+3849 4310 CircleF
+3849 4359 CircleF
+3849 4397 CircleF
+3849 4416 CircleF
+3849 4429 CircleF
+3849 4434 CircleF
+3849 4438 CircleF
+3849 4439 CircleF
+3849 4439 CircleF
+3849 4434 CircleF
+3849 4440 CircleF
+3877 4112 CircleF
+3877 4054 CircleF
+3877 4370 CircleF
+3877 4391 CircleF
+3877 4418 CircleF
+3877 4429 CircleF
+3877 4434 CircleF
+3877 4437 CircleF
+3877 4438 CircleF
+3877 4439 CircleF
+3877 4439 CircleF
+3877 4440 CircleF
+3905 4179 CircleF
+3905 4083 CircleF
+3905 4378 CircleF
+3905 4406 CircleF
+3905 4422 CircleF
+3905 4431 CircleF
+3905 4435 CircleF
+3905 4438 CircleF
+3905 4439 CircleF
+3905 4440 CircleF
+3905 4440 CircleF
+3905 4462 CircleF
+3933 4198 CircleF
+3933 4334 CircleF
+3933 4383 CircleF
+3933 4408 CircleF
+3933 4423 CircleF
+3933 4431 CircleF
+3933 4435 CircleF
+3933 4437 CircleF
+3933 4437 CircleF
+3933 4439 CircleF
+3933 4443 CircleF
+3933 4467 CircleF
+3961 4162 CircleF
+3961 4344 CircleF
+3961 4374 CircleF
+3961 4407 CircleF
+3961 4425 CircleF
+3961 4433 CircleF
+3961 4436 CircleF
+3961 4439 CircleF
+3961 4440 CircleF
+3961 4441 CircleF
+3961 4450 CircleF
+3961 4443 CircleF
+3989 4113 CircleF
+3989 4177 CircleF
+3989 4261 CircleF
+3989 4408 CircleF
+3989 4426 CircleF
+3989 4433 CircleF
+3989 4436 CircleF
+3989 4438 CircleF
+3989 4439 CircleF
+3989 4439 CircleF
+3989 4460 CircleF
+4017 4182 CircleF
+4017 4357 CircleF
+4017 4392 CircleF
+4017 4416 CircleF
+4017 4428 CircleF
+4017 4435 CircleF
+4017 4438 CircleF
+4017 4440 CircleF
+4017 4439 CircleF
+4017 4448 CircleF
+4017 4455 CircleF
+4045 4187 CircleF
+4045 4358 CircleF
+4045 4398 CircleF
+4045 4419 CircleF
+4045 4430 CircleF
+4045 4436 CircleF
+4045 4439 CircleF
+4045 4440 CircleF
+4045 4441 CircleF
+4045 4441 CircleF
+4045 4460 CircleF
+4073 4248 CircleF
+4073 4136 CircleF
+4073 4399 CircleF
+4073 4421 CircleF
+4073 4431 CircleF
+4073 4436 CircleF
+4073 4439 CircleF
+4073 4438 CircleF
+4073 4441 CircleF
+4073 4447 CircleF
+4073 4456 CircleF
+4101 4221 CircleF
+4101 4373 CircleF
+4101 4404 CircleF
+4101 4423 CircleF
+4101 4432 CircleF
+4101 4437 CircleF
+4101 4439 CircleF
+4101 4440 CircleF
+4101 4441 CircleF
+4101 4457 CircleF
+4101 4467 CircleF
+4130 4197 CircleF
+4130 4378 CircleF
+4130 4407 CircleF
+4130 4424 CircleF
+4130 4432 CircleF
+4130 4437 CircleF
+4130 4439 CircleF
+4130 4440 CircleF
+4130 4441 CircleF
+4130 4439 CircleF
+4130 4467 CircleF
+4158 4240 CircleF
+4158 4359 CircleF
+4158 4412 CircleF
+4158 4425 CircleF
+4158 4434 CircleF
+4158 4438 CircleF
+4158 4440 CircleF
+4158 4441 CircleF
+4158 4441 CircleF
+4158 4446 CircleF
+4158 4470 CircleF
+4186 4212 CircleF
+4186 4387 CircleF
+4186 4415 CircleF
+4186 4428 CircleF
+4186 4434 CircleF
+4186 4438 CircleF
+4186 4440 CircleF
+4186 4439 CircleF
+4186 4434 CircleF
+4186 4449 CircleF
+4214 4204 CircleF
+4214 4393 CircleF
+4214 4418 CircleF
+4214 4429 CircleF
+4214 4435 CircleF
+4214 4439 CircleF
+4214 4440 CircleF
+4214 4441 CircleF
+4214 4442 CircleF
+4214 4460 CircleF
+4242 4258 CircleF
+4242 4397 CircleF
+4242 4418 CircleF
+4242 4430 CircleF
+4242 4436 CircleF
+4242 4439 CircleF
+4242 4440 CircleF
+4242 4441 CircleF
+4242 4454 CircleF
+4242 4465 CircleF
+4270 4091 CircleF
+4270 4400 CircleF
+4270 4415 CircleF
+4270 4429 CircleF
+4270 4436 CircleF
+4270 4439 CircleF
+4270 4440 CircleF
+4270 4441 CircleF
+4270 4440 CircleF
+4270 4444 CircleF
+4298 4103 CircleF
+4298 4403 CircleF
+4298 4421 CircleF
+4298 4431 CircleF
+4298 4436 CircleF
+4298 4439 CircleF
+4298 4440 CircleF
+4298 4441 CircleF
+4298 4446 CircleF
+4298 4464 CircleF
+4326 4236 CircleF
+4326 4401 CircleF
+4326 4423 CircleF
+4326 4433 CircleF
+4326 4438 CircleF
+4326 4440 CircleF
+4326 4441 CircleF
+4326 4442 CircleF
+4326 4443 CircleF
+4326 4456 CircleF
+4354 4115 CircleF
+4354 4359 CircleF
+4354 4425 CircleF
+4354 4434 CircleF
+4354 4438 CircleF
+4354 4440 CircleF
+4354 4441 CircleF
+4354 4441 CircleF
+4354 4442 CircleF
+4354 4467 CircleF
+4382 4241 CircleF
+4382 4414 CircleF
+4382 4426 CircleF
+4382 4434 CircleF
+4382 4439 CircleF
+4382 4440 CircleF
+4382 4441 CircleF
+4382 4441 CircleF
+4382 4441 CircleF
+4410 4259 CircleF
+4410 4415 CircleF
+4410 4428 CircleF
+4410 4435 CircleF
+4410 4439 CircleF
+4410 4440 CircleF
+4410 4441 CircleF
+4410 4449 CircleF
+4410 4468 CircleF
+4438 4235 CircleF
+4438 4391 CircleF
+4438 4429 CircleF
+4438 4435 CircleF
+4438 4437 CircleF
+4438 4440 CircleF
+4438 4440 CircleF
+4438 4442 CircleF
+4438 4459 CircleF
+4466 4177 CircleF
+4466 4420 CircleF
+4466 4431 CircleF
+4466 4437 CircleF
+4466 4440 CircleF
+4466 4441 CircleF
+4466 4442 CircleF
+4466 4442 CircleF
+4466 4442 CircleF
+4495 4255 CircleF
+4495 4421 CircleF
+4495 4432 CircleF
+4495 4437 CircleF
+4495 4440 CircleF
+4495 4441 CircleF
+4495 4442 CircleF
+4495 4442 CircleF
+4495 4473 CircleF
+4523 4199 CircleF
+4523 4424 CircleF
+4523 4433 CircleF
+4523 4438 CircleF
+4523 4440 CircleF
+4523 4441 CircleF
+4523 4441 CircleF
+4523 4463 CircleF
+4523 4463 CircleF
+4551 4207 CircleF
+4551 4425 CircleF
+4551 4434 CircleF
+4551 4438 CircleF
+4551 4440 CircleF
+4551 4441 CircleF
+4551 4442 CircleF
+4551 4464 CircleF
+4551 4464 CircleF
+4579 4211 CircleF
+4579 4424 CircleF
+4579 4434 CircleF
+4579 4438 CircleF
+4579 4440 CircleF
+4579 4439 CircleF
+4579 4441 CircleF
+4579 4469 CircleF
+4579 4470 CircleF
+4607 4210 CircleF
+4607 4425 CircleF
+4607 4433 CircleF
+4607 4428 CircleF
+4607 4425 CircleF
+4607 4432 CircleF
+4607 4442 CircleF
+4607 4472 CircleF
+4635 4271 CircleF
+4635 4429 CircleF
+4635 4436 CircleF
+4635 4439 CircleF
+4635 4441 CircleF
+4635 4440 CircleF
+4635 4442 CircleF
+4635 4452 CircleF
+4663 4224 CircleF
+4663 4421 CircleF
+4663 4436 CircleF
+4663 4440 CircleF
+4663 4441 CircleF
+4663 4441 CircleF
+4663 4442 CircleF
+4663 4465 CircleF
+4691 4228 CircleF
+4691 4418 CircleF
+4691 4437 CircleF
+4691 4440 CircleF
+4691 4438 CircleF
+4691 4442 CircleF
+4691 4455 CircleF
+4691 4457 CircleF
+4719 4238 CircleF
+4719 4423 CircleF
+4719 4437 CircleF
+4719 4437 CircleF
+4719 4441 CircleF
+4719 4442 CircleF
+4719 4442 CircleF
+4719 4451 CircleF
+4747 4238 CircleF
+4747 4410 CircleF
+4747 4418 CircleF
+4747 4422 CircleF
+4747 4424 CircleF
+4747 4424 CircleF
+4747 4435 CircleF
+4747 4449 CircleF
+4775 4273 CircleF
+4775 4416 CircleF
+4775 4434 CircleF
+4775 4431 CircleF
+4775 4438 CircleF
+4775 4439 CircleF
+4775 4441 CircleF
+4775 4441 CircleF
+4804 4223 CircleF
+4804 4393 CircleF
+4804 4418 CircleF
+4804 4422 CircleF
+4804 4425 CircleF
+4804 4428 CircleF
+4804 4414 CircleF
+4832 4242 CircleF
+4832 4371 CircleF
+4832 4379 CircleF
+4832 4378 CircleF
+4832 4380 CircleF
+4832 4394 CircleF
+4832 4400 CircleF
+4860 4244 CircleF
+4860 4360 CircleF
+4860 4367 CircleF
+4860 4368 CircleF
+4860 4372 CircleF
+4860 4382 CircleF
+4860 4391 CircleF
+4888 4213 CircleF
+4888 4347 CircleF
+4888 4350 CircleF
+4888 4350 CircleF
+4888 4353 CircleF
+4888 4354 CircleF
+4888 4368 CircleF
+4916 4222 CircleF
+4916 4337 CircleF
+4916 4339 CircleF
+4916 4340 CircleF
+4916 4341 CircleF
+4916 4342 CircleF
+4916 4357 CircleF
+4944 4208 CircleF
+4944 4332 CircleF
+4944 4334 CircleF
+4944 4334 CircleF
+4944 4343 CircleF
+4944 4340 CircleF
+4944 4354 CircleF
+4972 4209 CircleF
+4972 4330 CircleF
+4972 4333 CircleF
+4972 4334 CircleF
+4972 4346 CircleF
+4972 4350 CircleF
+4972 4352 CircleF
+5000 4212 CircleF
+5000 4332 CircleF
+5000 4334 CircleF
+5000 4334 CircleF
+5000 4335 CircleF
+5000 4355 CircleF
+5028 4228 CircleF
+5028 4331 CircleF
+5028 4334 CircleF
+5028 4335 CircleF
+5028 4334 CircleF
+5028 4355 CircleF
+5056 4212 CircleF
+5056 4327 CircleF
+5056 4330 CircleF
+5056 4335 CircleF
+5056 4335 CircleF
+5056 4346 CircleF
+5084 4214 CircleF
+5084 4329 CircleF
+5084 4330 CircleF
+5084 4326 CircleF
+5084 4348 CircleF
+5084 4352 CircleF
+5112 4218 CircleF
+5112 4324 CircleF
+5112 4328 CircleF
+5112 4335 CircleF
+5112 4335 CircleF
+5112 4349 CircleF
+5141 4215 CircleF
+5141 4325 CircleF
+5141 4322 CircleF
+5141 4332 CircleF
+5141 4331 CircleF
+5141 4343 CircleF
+5169 4209 CircleF
+5169 4312 CircleF
+5169 4314 CircleF
+5169 4332 CircleF
+5169 4329 CircleF
+5169 4335 CircleF
+5197 4209 CircleF
+5197 4308 CircleF
+5197 4315 CircleF
+5197 4313 CircleF
+5197 4324 CircleF
+5197 4330 CircleF
+5225 4212 CircleF
+5225 4291 CircleF
+5225 4299 CircleF
+5225 4304 CircleF
+5225 4309 CircleF
+5253 4195 CircleF
+5253 4268 CircleF
+5253 4276 CircleF
+5253 4284 CircleF
+5253 4283 CircleF
+5281 4186 CircleF
+5281 4235 CircleF
+5281 4236 CircleF
+5281 4232 CircleF
+5281 4238 CircleF
+5309 4152 CircleF
+5309 4196 CircleF
+5309 4198 CircleF
+5309 4204 CircleF
+5309 4205 CircleF
+5337 4131 CircleF
+5337 4170 CircleF
+5337 4171 CircleF
+5337 4174 CircleF
+5337 4177 CircleF
+5365 4113 CircleF
+5365 4150 CircleF
+5365 4149 CircleF
+5365 4151 CircleF
+5365 4151 CircleF
+5393 4096 CircleF
+5393 4128 CircleF
+5393 4131 CircleF
+5393 4132 CircleF
+5393 4134 CircleF
+5421 4083 CircleF
+5421 4114 CircleF
+5421 4114 CircleF
+5421 4117 CircleF
+5450 4068 CircleF
+5450 4099 CircleF
+5450 4101 CircleF
+5450 4101 CircleF
+5478 4063 CircleF
+5478 4088 CircleF
+5478 4088 CircleF
+5478 4088 CircleF
+5506 4054 CircleF
+5506 4078 CircleF
+5506 4077 CircleF
+5506 4076 CircleF
+5534 4048 CircleF
+5534 4067 CircleF
+5534 4069 CircleF
+5534 4069 CircleF
+5562 4036 CircleF
+5562 4060 CircleF
+5562 4061 CircleF
+5562 4061 CircleF
+5590 4028 CircleF
+5590 4052 CircleF
+5590 4054 CircleF
+5590 4054 CircleF
+5618 4030 CircleF
+5618 4047 CircleF
+5618 4047 CircleF
+5646 4023 CircleF
+5646 4041 CircleF
+5646 4042 CircleF
+5674 4020 CircleF
+5674 4036 CircleF
+5674 4036 CircleF
+5702 4017 CircleF
+5702 4032 CircleF
+5702 4028 CircleF
+5730 4014 CircleF
+5730 4028 CircleF
+5730 4028 CircleF
+5758 4009 CircleF
+5758 4020 CircleF
+5758 4023 CircleF
+5787 3997 CircleF
+5787 4016 CircleF
+5787 4014 CircleF
+5815 3996 CircleF
+5815 4011 CircleF
+5843 3989 CircleF
+5843 4011 CircleF
+5871 3987 CircleF
+5871 4007 CircleF
+5899 3977 CircleF
+5899 4006 CircleF
+5927 3988 CircleF
+5927 4005 CircleF
+5955 3985 CircleF
+5955 4003 CircleF
+5983 3984 CircleF
+5983 4002 CircleF
+6011 3985 CircleF
+6011 4000 CircleF
+6039 3983 CircleF
+6067 3980 CircleF
+6096 3979 CircleF
+6124 3977 CircleF
+6152 3977 CircleF
+6180 3974 CircleF
+6208 3950 CircleF
+% End plot #1
+2.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTB
+LCb setrgbcolor
+770 4619 N
+770 448 L
+6107 0 V
+0 4171 V
+-6107 0 V
+Z stroke
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+stroke
+grestore
+end
+showpage
+%%Trailer
+%%DocumentFonts: Helvetica
+%%Pages: 1

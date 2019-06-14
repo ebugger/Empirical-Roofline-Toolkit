@@ -1,0 +1,10 @@
+#PBS -q premium
+#PBS -l mppwidth=24
+#PBS -l walltime=01:00:00
+#PBS -m abe
+
+# A batch script to run the ERT on NERSC's Edison and log the results
+
+cd $PBS_O_WORKDIR
+
+(time ert Config/config.edison.nersc.gov.01) >&! log.edison.nersc.gov.01

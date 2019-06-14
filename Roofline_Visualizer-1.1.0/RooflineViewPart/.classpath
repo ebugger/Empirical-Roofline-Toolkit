@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry exported="true" kind="lib" path="google-gson-2.2.4/gson-2.2.4.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="tau/perfdmf.jar" sourcepath="/home/wspear/bin/tau2/tools/src/perfdmf/src"/>
+	<classpathentry kind="lib" path="tau/perfexplorer.jar" sourcepath="/home/wspear/bin/tau2/tools/src/perfexplorer/src"/>
+	<classpathentry kind="lib" path="tau/tau-common.jar"/>
+	<classpathentry kind="lib" path="jsoup/jsoup-1.7.3.jar"/>
+	<classpathentry kind="lib" path="jfree/lib/jcommon-1.0.23.jar"/>
+	<classpathentry kind="lib" path="jfree/lib/jfreechart-1.0.19.jar"/>
+	<classpathentry kind="lib" path="jfree/lib/jfreechart-1.0.19-fx.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

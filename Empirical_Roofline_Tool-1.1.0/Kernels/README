@@ -1,0 +1,2 @@
+This directory contains the computation kernels used by the ERT.  Currently
+one kernel is used to obtain all the ERT results.

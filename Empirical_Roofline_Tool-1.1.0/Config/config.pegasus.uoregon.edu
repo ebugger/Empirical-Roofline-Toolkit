@@ -1,0 +1,41 @@
+# 2 x 18-core Intel Xeon Gold 6140 'Skylake' processors
+
+ERT_RESULTS Results.pegasus.uoregon.edu.01
+
+ERT_DRIVER  driver1
+ERT_KERNEL  kernel1
+
+ERT_MPI         True
+ERT_MPI_CFLAGS -I /packages/intel/18/linux/mpi/intel64/include/
+ERT_MPI_LDFLAGS -L /packages/intel/18/linux/mpi/intel64/lib -lmpi
+
+ERT_OPENMP         True
+ERT_OPENMP_CFLAGS  -qopenmp 
+ERT_OPENMP_LDFLAGS -qopenmp 
+
+ERT_FLOPS   1,2,4,8,16,64,128
+ERT_ALIGN   64
+
+ERT_CC      icc
+ERT_CFLAGS  -O3 -fno-alias -fno-fnalias -xCore-AVX512 -qopt-zmm-usage=high -DERT_INTEL
+
+ERT_LD      icc
+ERT_LDFLAGS 
+ERT_LDLIBS  
+
+ERT_RUN     export OMP_NUM_THREADS=ERT_OPENMP_THREADS; export OMP_PROC_BIND=spread; export OMP_PLACES=threads; mpirun -np ERT_MPI_PROCS ERT_CODE
+
+ERT_PROCS_THREADS  72
+ERT_MPI_PROCS      2,6,9,18,36
+ERT_OPENMP_THREADS 1-72
+
+ERT_NUM_EXPERIMENTS 5
+
+ERT_MEMORY_MAX 1073741824
+
+ERT_WORKING_SET_MIN 128
+
+ERT_TRIALS_MIN 1
+
+ERT_GNUPLOT gnuplot
+

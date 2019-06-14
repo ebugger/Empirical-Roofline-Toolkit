@@ -1,0 +1,149 @@
+{
+   "empirical": {
+      "gbytes": {
+         "data": [
+            [
+               "L1", 
+               559.13999999999999
+            ], 
+            [
+               "DRAM", 
+               160.66
+            ]
+         ], 
+         "metadata": {
+            "UNAME": [
+               "Linux", 
+               "titan-login8", 
+               "3.0.101-0.31.1_1.0502.8394-cray_gem_s", 
+               "#1 SMP Wed Sep 10 03:56:55 UTC 2014", 
+               "x86_64", 
+               "x86_64"
+            ], 
+            "HOSTNAME": [
+               "titan-login8.ccs.ornl.gov", 
+               [], 
+               [
+                  "160.91.205.245"
+               ]
+            ], 
+            "FLOPS": 2, 
+            "TIMESTAMP_DB": 1444722045.3724129, 
+            "TIMESTAMP_DATA": 1444719848.9100001
+         }
+      }, 
+      "gflops": {
+         "data": [
+            [
+               "GFLOPs", 
+               1225.48
+            ]
+         ], 
+         "metadata": {
+            "UNAME": [
+               "Linux", 
+               "titan-login7", 
+               "3.0.101-0.31.1_1.0502.8394-cray_gem_s", 
+               "#1 SMP Wed Sep 10 03:56:55 UTC 2014", 
+               "x86_64", 
+               "x86_64"
+            ], 
+            "HOSTNAME": [
+               "titan-login7.ccs.ornl.gov", 
+               [], 
+               [
+                  "160.91.205.244"
+               ]
+            ], 
+            "FLOPS": 256, 
+            "TIMESTAMP_DB": 1444722045.371892, 
+            "TIMESTAMP_DATA": 1444721898.8199999
+         }
+      }, 
+      "metadata": {
+         "ERT_VERSION": "1.1.0", 
+         "GPU_THREADS": 128, 
+         "CONFIG": {
+            "ERT_WORKING_SET_MIN": [
+               "128"
+            ], 
+            "ERT_CFLAGS": [
+               "-O3"
+            ], 
+            "ERT_CC": [
+               "nvcc"
+            ], 
+            "ERT_BLOCKS_THREADS": [
+               "28672"
+            ], 
+            "ERT_FLOPS": [
+               "1,2,4,8,16,32,64,128,256"
+            ], 
+            "ERT_RESULTS": [
+               "Results.titan.ccs.ornl.gov.02"
+            ], 
+            "ERT_MEMORY_MAX": [
+               "1073741824"
+            ], 
+            "ERT_LDFLAGS": [], 
+            "ERT_LDLIBS": [], 
+            "ERT_RUN": [
+               "aprun", 
+               "-n", 
+               "1", 
+               "ERT_CODE"
+            ], 
+            "ERT_GPU_THREADS": [
+               "64,128,256,512,1024"
+            ], 
+            "ERT_MPI": [
+               false
+            ], 
+            "ERT_TRIALS_MIN": [
+               "1"
+            ], 
+            "ERT_DRIVER": [
+               "driver1"
+            ], 
+            "ERT_GPU_LDFLAGS": [], 
+            "ERT_OPENMP": [
+               false
+            ], 
+            "ERT_GPU_CFLAGS": [
+               "-x", 
+               "cu"
+            ], 
+            "ERT_KERNEL": [
+               "kernel1"
+            ], 
+            "ERT_GPU": [
+               "True"
+            ], 
+            "ERT_LD": [
+               "CC"
+            ], 
+            "ERT_NUM_EXPERIMENTS": [
+               "1"
+            ], 
+            "ERT_ALIGN": [
+               "32"
+            ], 
+            "ERT_GNUPLOT": [
+               "gnuplot"
+            ], 
+            "ERT_GPU_BLOCKS": [
+               "28,56,112,224,448"
+            ]
+         }, 
+         "GPU_BLOCKS": 224
+      }
+   }, 
+   "spec": {
+      "gbytes": {
+         "data": []
+      }, 
+      "gflops": {
+         "data": []
+      }
+   }
+}

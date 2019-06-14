@@ -1,0 +1,12 @@
+#!/bin/bash -l
+#SBATCH -q regular
+#SBATCH -N 1       
+#SBATCH -t 00:30:00 
+#SBATCH -C knl,quad,cache
+
+module swap craype-haswell craype-mic-knl
+
+cd <ERT directory>
+
+(time ./ert Config/config.cori.nersc.gov.02) >&! log.cori.nersc.gov.02
+

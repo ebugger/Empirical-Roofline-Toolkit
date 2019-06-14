@@ -1,0 +1,21 @@
+    37.34 GFLOPs
+
+  4814.92 Weight
+
+   597.49 L1
+   345.26 L2
+   173.35 L3
+    63.17 L4
+    37.70 DRAM
+
+META_DATA
+ERT_VERSION  1.1.0
+TIMESTAMP_DATA  1560424193.7
+HOSTNAME  ('kcadmin-UniServer-R5200-G3', [], ['127.0.1.1'])
+OPENMP_THREADS 1
+CONFIG  {'ERT_WORKING_SET_MIN': ['1'], 'ERT_CFLAGS': ['-O3', '-march=native', '-fstrict-aliasing', '-ftree-vectorize'], 'ERT_CC': ['gcc'], 'ERT_MPI_CFLAGS': ['-I/usr/local/include'], 'ERT_MPI_LDFLAGS': ['-L/usr/local/lib', '-lmpi'], 'ERT_MEMORY_MAX': ['1073741824'], 'ERT_PROCS_THREADS': ['1-8'], 'ERT_LDFLAGS': [], 'ERT_LDLIBS': [], 'ERT_RUN': ['export', 'OMP_NUM_THREADS=ERT_OPENMP_THREADS;', 'mpirun', '-np', 'ERT_MPI_PROCS', 'ERT_CODE'], 'ERT_FLOPS': ['1,2,4,8,16'], 'ERT_OPENMP_CFLAGS': ['-fopenmp'], 'ERT_MPI': ['True'], 'ERT_TRIALS_MIN': ['1'], 'ERT_DRIVER': ['driver1'], 'ERT_RESULTS': ['Results.p100.01'], 'ERT_OPENMP': ['True'], 'ERT_MPI_PROCS': ['1,2,4,8'], 'ERT_KERNEL': ['kernel1'], 'ERT_GPU': [False], 'ERT_OPENMP_THREADS': ['1,2,4,8'], 'ERT_LD': ['gcc'], 'ERT_NUM_EXPERIMENTS': ['3'], 'ERT_OPENMP_LDFLAGS': ['-fopenmp'], 'ERT_ALIGN': ['32'], 'ERT_GNUPLOT': ['gnuplot']}
+FLOPS          1
+TIMESTAMP_DATA  1560424189.32
+MPI_PROCS      4
+TIMESTAMP_DATA  1560424184.9
+UNAME  ('Linux', 'kcadmin-UniServer-R5200-G3', '4.4.0-141-generic', '#167-Ubuntu SMP Wed Dec 5 10:40:15 UTC 2018', 'x86_64', 'x86_64')

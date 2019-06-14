@@ -1,0 +1,13 @@
+#!/bin/bash
+#BSUB -P <project123>
+#BSUB -W 60
+#BSUB -nnodes 1 
+
+module load cuda
+module load gnuplot 
+
+cd $MEMBERWORK/<projid>/<ERT directory>
+
+jsrun -n 1 -a 1 -g 1 ./ert --verbose=2 Config/config.summit.ornl.gov 
+
+

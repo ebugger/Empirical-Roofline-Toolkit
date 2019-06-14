@@ -1,0 +1,168 @@
+{
+   "empirical": {
+      "gbytes": {
+         "data": [
+            [
+               "L1", 
+               360.04000000000002
+            ], 
+            [
+               "L2", 
+               185.15000000000001
+            ], 
+            [
+               "DRAM", 
+               31.16
+            ]
+         ], 
+         "metadata": {
+            "TIMESTAMP_DATA": [
+               1447116643.73, 
+               1447116622.51, 
+               1447116612.03, 
+               1447116633.05, 
+               1447116601.54
+            ], 
+            "FLOPS": 2, 
+            "TIMESTAMP_DB": 1447117880.802819
+         }
+      }, 
+      "gflops": {
+         "data": [
+            [
+               "GFLOPs", 
+               105.34
+            ]
+         ], 
+         "metadata": {
+            "TIMESTAMP_DATA": [
+               1447117613.46, 
+               1447117666.4000001, 
+               1447117653.3399999, 
+               1447117626.5599999, 
+               1447117640.1099999
+            ], 
+            "FLOPS": 16, 
+            "TIMESTAMP_DB": 1447117880.802177
+         }
+      }, 
+      "metadata": {
+         "ERT_VERSION": "1.1.0", 
+         "HOSTNAME": [
+            "titan-batch7.ccs.ornl.gov", 
+            [], 
+            [
+               "160.91.205.241"
+            ]
+         ], 
+         "OPENMP_THREADS": 4, 
+         "UNAME": [
+            "Linux", 
+            "titan-batch7", 
+            "3.0.101-0.46.1_1.0502.8871-cray_gem_s", 
+            "#1 SMP Tue Aug 25 21:40:14 UTC 2015", 
+            "x86_64", 
+            "x86_64"
+         ], 
+         "CONFIG": {
+            "ERT_WORKING_SET_MIN": [
+               "1"
+            ], 
+            "ERT_CFLAGS": [
+               "-O3", 
+               "-mfma4"
+            ], 
+            "ERT_CC": [
+               "cc"
+            ], 
+            "ERT_MPI_CFLAGS": [], 
+            "ERT_MPI_LDFLAGS": [], 
+            "ERT_MEMORY_MAX": [
+               "1073741824"
+            ], 
+            "ERT_PROCS_THREADS": [
+               "16"
+            ], 
+            "ERT_LDFLAGS": [], 
+            "ERT_LDLIBS": [], 
+            "ERT_RUN": [
+               "export", 
+               "OMP_NUM_THREADS=ERT_OPENMP_THREADS;", 
+               "aprun", 
+               "-n", 
+               "ERT_MPI_PROCS", 
+               "-N", 
+               "ERT_MPI_PROCS", 
+               "-d", 
+               "ERT_OPENMP_THREADS", 
+               "-S", 
+               "`expr", 
+               "ERT_MPI_PROCS", 
+               "/", 
+               "2`", 
+               "-ss", 
+               "-cc", 
+               "numa_node", 
+               "ERT_CODE"
+            ], 
+            "ERT_FLOPS": [
+               "1,2,4,8,16"
+            ], 
+            "ERT_OPENMP_CFLAGS": [
+               "-fopenmp"
+            ], 
+            "ERT_MPI": [
+               "True"
+            ], 
+            "ERT_TRIALS_MIN": [
+               "1"
+            ], 
+            "ERT_DRIVER": [
+               "driver1"
+            ], 
+            "ERT_RESULTS": [
+               "Results.titan.ccs.ornl.gov.01"
+            ], 
+            "ERT_OPENMP": [
+               "True"
+            ], 
+            "ERT_MPI_PROCS": [
+               "2,4,8,16"
+            ], 
+            "ERT_KERNEL": [
+               "kernel1"
+            ], 
+            "ERT_GPU": [
+               false
+            ], 
+            "ERT_OPENMP_THREADS": [
+               "1-16"
+            ], 
+            "ERT_LD": [
+               "cc"
+            ], 
+            "ERT_NUM_EXPERIMENTS": [
+               "5"
+            ], 
+            "ERT_OPENMP_LDFLAGS": [
+               "-fopenmp"
+            ], 
+            "ERT_ALIGN": [
+               "32"
+            ], 
+            "ERT_GNUPLOT": [
+               "gnuplot"
+            ]
+         }, 
+         "MPI_PROCS": 4
+      }
+   }, 
+   "spec": {
+      "gbytes": {
+         "data": []
+      }, 
+      "gflops": {
+         "data": []
+      }
+   }
+}

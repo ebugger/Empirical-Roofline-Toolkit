@@ -1,0 +1,13 @@
+#!/bin/csh
+
+# A batch script to run the ERT on Argonne's Mira and log the results
+# No post-processing is done on Mira as it doesn't have the necessary
+# software. 
+
+# The post-processing can be done anywhere that has the necessary software
+# by copying the entire "Results.mira.alcf.anl.gov.01" directory there and
+# running the command:
+#
+#     ./ert --no-run Config/config.mira.alcf.anl.gov.01
+
+(time ./ert --no-post Config/config.mira.alcf.anl.gov.01) >&! log.mira.alcf.anl.gov.01

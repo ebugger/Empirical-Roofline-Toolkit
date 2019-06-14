@@ -1,0 +1,9 @@
+#!/bin/csh
+#SBATCH -p regular
+#SBATCH -N 1
+#SBATCH -t 01:00:00
+
+# A batch script to run the ERT on NERSC's Babbage and log the results.
+# This only runs on the MIC card.
+
+(time ert --no-post Config/config.babbage.nersc.gov.02) >&! log.babbage.nersc.gov.02

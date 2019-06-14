@@ -1,0 +1,41 @@
+# IBM Blue Gene/Q node - 16 1600 MHz PowerPC A2 cores
+
+ERT_RESULTS Results.mira.alcf.anl.gov.01
+
+ERT_DRIVER  driver1
+ERT_KERNEL  kernel1
+
+ERT_MPI         True
+ERT_MPI_CFLAGS
+ERT_MPI_LDFLAGS
+
+ERT_OPENMP         True
+ERT_OPENMP_CFLAGS  -qsmp=omp:noauto
+ERT_OPENMP_LDFLAGS -qsmp=omp:noauto
+
+ERT_FLOPS   1,2,4,8,16,32,64,128
+ERT_ALIGN   32
+
+ERT_CC      mpicc
+ERT_CFLAGS  -O5 -qarch=qp -qtune=qp -qsimd=auto -qprefetch -qalias=ansi:allptrs
+
+ERT_LD      mpicc
+ERT_LDFLAGS -O5 -qarch=qp -qtune=qp -qsimd=auto -qprefetch -qalias=ansi:allptrs
+ERT_LDLIBS  
+
+ERT_RUN     runjob --np ERT_MPI_PROCS --ranks-per-node ERT_MPI_PROCS --block $COBALT_PARTNAME --envs COBALT_JOBID=$COBALT_JOBID --envs OMP_NUM_THREADS=ERT_OPENMP_THREADS --envs PAMID_VERBOSE=1 --envs BG_SHAREDMEMSIZE=32MB --envs BG_COREDUMPDISABLED=1 --envs BG_SMP_FAST_WAKEUP=YES --envs BG_THREADLAYOUT=1 --envs OMP_PROC_BIND=TRUE --envs OMP_WAIT_POLICY=active : ERT_CODE
+
+ERT_PROCS_THREADS  64
+# ERT_PROCS_THREADS  16,32,64
+ERT_MPI_PROCS      1,2,4
+ERT_OPENMP_THREADS 16,32,64
+
+ERT_NUM_EXPERIMENTS 3
+
+ERT_MEMORY_MAX 1073741824
+
+ERT_WORKING_SET_MIN 1
+
+ERT_TRIALS_MIN 1
+
+ERT_GNUPLOT gnuplot

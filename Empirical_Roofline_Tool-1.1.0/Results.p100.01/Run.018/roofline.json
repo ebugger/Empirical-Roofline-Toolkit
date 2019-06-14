@@ -1,0 +1,163 @@
+{
+   "empirical": {
+      "gbytes": {
+         "data": [
+            [
+               "L1", 
+               1002.83
+            ], 
+            [
+               "L2", 
+               541.98
+            ], 
+            [
+               "L3", 
+               290.41
+            ], 
+            [
+               "DRAM", 
+               68.76
+            ]
+         ], 
+         "metadata": {
+            "TIMESTAMP_DATA": [
+               1560424198.1, 
+               1560424200.98, 
+               1560424204.03
+            ], 
+            "FLOPS": 1, 
+            "TIMESTAMP_DB": 1560425105.979865
+         }
+      }, 
+      "gflops": {
+         "data": [
+            [
+               "GFLOPs", 
+               288.33
+            ]
+         ], 
+         "metadata": {
+            "TIMESTAMP_DATA": [
+               1560425074.68, 
+               1560425080.3, 
+               1560425068.77
+            ], 
+            "FLOPS": 16, 
+            "TIMESTAMP_DB": 1560425105.979378
+         }
+      }, 
+      "metadata": {
+         "ERT_VERSION": "1.1.0", 
+         "HOSTNAME": [
+            "kcadmin-UniServer-R5200-G3", 
+            [], 
+            [
+               "127.0.1.1"
+            ]
+         ], 
+         "OPENMP_THREADS": 2, 
+         "UNAME": [
+            "Linux", 
+            "kcadmin-UniServer-R5200-G3", 
+            "4.4.0-141-generic", 
+            "#167-Ubuntu SMP Wed Dec 5 10:40:15 UTC 2018", 
+            "x86_64", 
+            "x86_64"
+         ], 
+         "CONFIG": {
+            "ERT_WORKING_SET_MIN": [
+               "1"
+            ], 
+            "ERT_CFLAGS": [
+               "-O3", 
+               "-march=native", 
+               "-fstrict-aliasing", 
+               "-ftree-vectorize"
+            ], 
+            "ERT_CC": [
+               "gcc"
+            ], 
+            "ERT_MPI_CFLAGS": [
+               "-I/usr/local/include"
+            ], 
+            "ERT_MPI_LDFLAGS": [
+               "-L/usr/local/lib", 
+               "-lmpi"
+            ], 
+            "ERT_MEMORY_MAX": [
+               "1073741824"
+            ], 
+            "ERT_PROCS_THREADS": [
+               "1-8"
+            ], 
+            "ERT_LDFLAGS": [], 
+            "ERT_LDLIBS": [], 
+            "ERT_RUN": [
+               "export", 
+               "OMP_NUM_THREADS=ERT_OPENMP_THREADS;", 
+               "mpirun", 
+               "-np", 
+               "ERT_MPI_PROCS", 
+               "ERT_CODE"
+            ], 
+            "ERT_FLOPS": [
+               "1,2,4,8,16"
+            ], 
+            "ERT_OPENMP_CFLAGS": [
+               "-fopenmp"
+            ], 
+            "ERT_MPI": [
+               "True"
+            ], 
+            "ERT_TRIALS_MIN": [
+               "1"
+            ], 
+            "ERT_DRIVER": [
+               "driver1"
+            ], 
+            "ERT_RESULTS": [
+               "Results.p100.01"
+            ], 
+            "ERT_OPENMP": [
+               "True"
+            ], 
+            "ERT_MPI_PROCS": [
+               "1,2,4,8"
+            ], 
+            "ERT_KERNEL": [
+               "kernel1"
+            ], 
+            "ERT_GPU": [
+               false
+            ], 
+            "ERT_OPENMP_THREADS": [
+               "1,2,4,8"
+            ], 
+            "ERT_LD": [
+               "gcc"
+            ], 
+            "ERT_NUM_EXPERIMENTS": [
+               "3"
+            ], 
+            "ERT_OPENMP_LDFLAGS": [
+               "-fopenmp"
+            ], 
+            "ERT_ALIGN": [
+               "32"
+            ], 
+            "ERT_GNUPLOT": [
+               "gnuplot"
+            ]
+         }, 
+         "MPI_PROCS": 4
+      }
+   }, 
+   "spec": {
+      "gbytes": {
+         "data": []
+      }, 
+      "gflops": {
+         "data": []
+      }
+   }
+}

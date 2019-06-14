@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            name="Roofline View"
+            icon="icons/sample.gif"
+            class="rooflineviewpart.views.RooflineViewPart"
+            id="rooflineviewpart.views.RooflineViewPart">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            id="RooflineViewPart.contribution1"
+            objectClass="org.eclipse.cdt.core.model.ICElement">
+         <menu
+               id="RooflineViewPart.menu1"
+               label="Roofline"
+               path="additions">
+            <separator
+                  name="group1">
+            </separator>
+         </menu>
+         <action
+               class="rooflineviewpart.popup.actions.ShowInRoofline"
+               enablesFor="1"
+               id="RooflineViewPart.newAction"
+               label="Show In Roofline"
+               menubarPath="RooflineViewPart.menu1/group1">
+         </action>
+      </objectContribution>
+   </extension>
+
+
+</plugin>

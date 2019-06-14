@@ -1,0 +1,14 @@
+#PBS -q debug
+#PBS -A CSC103
+#PBS -l walltime=01:00:00
+#PBS -l nodes=1
+#PBS -m abe
+
+# A batch script to run the ERT on ORNL's Titan (host only) and log the results
+
+cd $PBS_O_WORKDIR
+
+module swap PrgEnv-pgi PrgEnv-gnu
+cc --version
+
+(time ert Config/config.titan.ccs.ornl.gov.01) >&! log.titan.ccs.ornl.gov.01

@@ -1,0 +1,9 @@
+In this directory are a set of batch scripts for running the ERT on various
+machines that have a batch submission system.
+
+These scripts use the configurations in "../Config" and correspond to the
+results in "../Results".
+
+It is assumed that the batch script are submitted from the parent directory
+of this directory so that all the paths are correct.  If submitted from
+another directory, some changes will be needed.

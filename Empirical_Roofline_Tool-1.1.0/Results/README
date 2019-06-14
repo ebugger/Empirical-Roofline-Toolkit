@@ -1,0 +1,42 @@
+In this directory are a set of ERT results generated using the
+configuration files in "../Config".  There are both PostScript plots of the
+roofline which can be viewed/printed and JSON database files which can be
+visualized with the Roofline Visualizer.
+
+  roofline.babbage.nersc.gov.01.*
+    Knight's Corner (KNC) node testing only the host and not the MIC
+
+  roofline.babbage.nersc.gov.02.*
+    Knight's Corner (KNC) node testing only the MIC and not the host
+
+  roofline.edison.nersc.gov.01.*
+    Cray XC30 node - 2 x 12-core Intel "Ivy Bridge" processors
+
+  roofline.madonna.lbl.gov.01.*
+    Linux workstation, MPI and OpenMP (8-core Intel Xeon CPU E5530, 2.40 GHz)
+
+  roofline.madonna.lbl.gov.02.*
+    Linux workstation, Only OpenMP (8-core Intel Xeon CPU E5530, 2.40 GHz)
+
+  roofline.mira.alcf.anl.gov.01.*
+    IBM Blue Gene/Q node - 16 1600 MHz PowerPC A2 cores
+
+  roofline.titan.ccs.ornl.gov.01.*
+    Cray XK7 node - Test only the host processor on the node,
+                    16-core 2.2GHz AMD Opteron™ 6274 (Interlagos) processor
+
+  roofline.titan.ccs.ornl.gov.02.*
+    Cray XK7 node - Test only the GPU processor on the node,
+                    NVIDIA Kepler™accelerator GPU
+
+These results are meant to be representative of the roofline results we
+were able to measure.  That said, these are only examples and it may be
+possible to obtain better rooflines with different compiler/loader flags,
+drivers/kernels, etc.
+
+There are example batch scripts in "../Batch" and corresponding
+configuration files in "../Config".
+
+We are actively interested in improved results and how they were obtained.
+Please contact us with any results/configurations you feel would improve
+these examples.

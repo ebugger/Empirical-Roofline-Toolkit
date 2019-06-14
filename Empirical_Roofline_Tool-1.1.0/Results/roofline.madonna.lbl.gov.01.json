@@ -1,0 +1,167 @@
+{
+   "empirical": {
+      "gbytes": {
+         "data": [
+            [
+               "L1", 
+               499.81
+            ], 
+            [
+               "L2", 
+               303.69
+            ], 
+            [
+               "L3", 
+               81.15
+            ], 
+            [
+               "DRAM", 
+               31.78
+            ]
+         ], 
+         "metadata": {
+            "TIMESTAMP_DATA": [
+               1443587752.78, 
+               1443587739.46, 
+               1443587745.51
+            ], 
+            "OPENMP_THREADS": 8, 
+            "FLOPS": 1, 
+            "TIMESTAMP_DB": 1443592549.93545, 
+            "MPI_PROCS": 1
+         }
+      }, 
+      "gflops": {
+         "data": [
+            [
+               "GFLOPs", 
+               49.92
+            ]
+         ], 
+         "metadata": {
+            "TIMESTAMP_DATA": [
+               1443588640.5, 
+               1443588631.84, 
+               1443588622.37
+            ], 
+            "OPENMP_THREADS": 2, 
+            "FLOPS": 4, 
+            "TIMESTAMP_DB": 1443592549.934831, 
+            "MPI_PROCS": 4
+         }
+      }, 
+      "metadata": {
+         "ERT_VERSION": "1.1.0", 
+         "HOSTNAME": [
+            "madonna", 
+            [], 
+            [
+               "127.0.1.1"
+            ]
+         ], 
+         "CONFIG": {
+            "ERT_WORKING_SET_MIN": [
+               "1"
+            ], 
+            "ERT_CFLAGS": [
+               "-O3", 
+               "-msse3", 
+               "-axSSE3", 
+               "-xSSE3", 
+               "-fno-alias", 
+               "-fno-fnalias", 
+               "-DERT_INTEL"
+            ], 
+            "ERT_CC": [
+               "icc"
+            ], 
+            "ERT_MPI_CFLAGS": [
+               "-I/usr/include/mpi"
+            ], 
+            "ERT_MPI_LDFLAGS": [
+               "-lmpi"
+            ], 
+            "ERT_MEMORY_MAX": [
+               "1073741824"
+            ], 
+            "ERT_PROCS_THREADS": [
+               "1-8"
+            ], 
+            "ERT_LDFLAGS": [], 
+            "ERT_LDLIBS": [], 
+            "ERT_RUN": [
+               "export", 
+               "OMP_NUM_THREADS=ERT_OPENMP_THREADS;", 
+               "mpirun", 
+               "-np", 
+               "ERT_MPI_PROCS", 
+               "ERT_CODE"
+            ], 
+            "ERT_FLOPS": [
+               "1,2,4,8,16"
+            ], 
+            "ERT_OPENMP_CFLAGS": [
+               "-openmp"
+            ], 
+            "ERT_MPI": [
+               "True"
+            ], 
+            "ERT_TRIALS_MIN": [
+               "1"
+            ], 
+            "ERT_DRIVER": [
+               "driver1"
+            ], 
+            "ERT_RESULTS": [
+               "Results.madonna.lbl.gov.01"
+            ], 
+            "ERT_OPENMP": [
+               "True"
+            ], 
+            "ERT_MPI_PROCS": [
+               "1,2,4,8"
+            ], 
+            "ERT_KERNEL": [
+               "kernel1"
+            ], 
+            "ERT_GPU": [
+               false
+            ], 
+            "ERT_OPENMP_THREADS": [
+               "1,2,4,8"
+            ], 
+            "ERT_LD": [
+               "icc"
+            ], 
+            "ERT_NUM_EXPERIMENTS": [
+               "3"
+            ], 
+            "ERT_OPENMP_LDFLAGS": [
+               "-openmp"
+            ], 
+            "ERT_ALIGN": [
+               "32"
+            ], 
+            "ERT_GNUPLOT": [
+               "gnuplot"
+            ]
+         }, 
+         "UNAME": [
+            "Linux", 
+            "madonna", 
+            "3.13.0-63-generic", 
+            "#103-Ubuntu SMP Fri Aug 14 21:42:59 UTC 2015", 
+            "x86_64", 
+            "x86_64"
+         ]
+      }
+   }, 
+   "spec": {
+      "gbytes": {
+         "data": []
+      }, 
+      "gflops": {
+         "data": []
+      }
+   }
+}
