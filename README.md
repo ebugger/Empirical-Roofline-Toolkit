@@ -1,11 +1,10 @@
 # CS Roofline Toolkit #
- ![alt text](https://raw.githubusercontent.com/ebugger/Empirical-Roofline-Toolkit/master/Roofline-intro.png)
 Welcome to the CS Roofline Toolkit Bitbucket site.  The Empirical Roofline Tool and Roofline Visualizer are currently available here.
 In the future additional tools will be hosted here.  
 
 For an overview of the Roofline Performance Model and this software's place in that context see
 [https://crd.lbl.gov/departments/computer-science/performance-and-algorithms-research/research/roofline/](https://crd.lbl.gov/departments/computer-science/performance-and-algorithms-research/research/roofline/).
-
+![alt text](https://raw.githubusercontent.com/ebugger/Empirical-Roofline-Toolkit/master/Roofline-intro.png)
 ## Empirical Roofline Tool ##
 
 The Empirical Roofline Tool, ERT, automatically generates a roofline data
