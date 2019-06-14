@@ -1,5 +1,5 @@
 # CS Roofline Toolkit #
-
+ ![alt text](https://raw.githubusercontent.com/ebugger/Empirical-Roofline-Toolkit/master/Roofline-intro.png)
 Welcome to the CS Roofline Toolkit Bitbucket site.  The Empirical Roofline Tool and Roofline Visualizer are currently available here.
 In the future additional tools will be hosted here.  
 
